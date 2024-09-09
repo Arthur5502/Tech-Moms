@@ -8,6 +8,9 @@
 
   Uma plataforma para mães em tecnologia, proporcionando trabalho flexível e incentivos. Oferece recompensas por atividades, matching avançado com Inteligência Artificial (IA), tutoriais, e análise de mercado. Inclui comunidade, feedback detalhado e reconhecimento público para amplificar a visibilidade e sucesso.
 
+  ![image](https://github.com/user-attachments/assets/8f17dd94-69c3-4415-bc77-4efacbb255b2)
+
+
 ## FUNCIONALIDADES
 
 1.   Plataforma de Networking e Comunidade: criar uma rede de apoio onde as mães freelancers possam trocar experiências, dicas, oportunidades, suporte mútuo, colaborar em projetos e obter orientação de outras profissionais que enfrentam desafios semelhantes.
