@@ -8,7 +8,7 @@
 
   Uma plataforma para mães em tecnologia, proporcionando trabalho flexível e incentivos. Oferece recompensas por atividades, matching avançado com Inteligência Artificial (IA), tutoriais, e análise de mercado. Inclui comunidade, feedback detalhado e reconhecimento público para amplificar a visibilidade e sucesso.
 
-##FUNCIONALIDADES
+## FUNCIONALIDADES
 
 1.   Plataforma de Networking e Comunidade: criar uma rede de apoio onde as mães freelancers possam trocar experiências, dicas, oportunidades, suporte mútuo, colaborar em projetos e obter orientação de outras profissionais que enfrentam desafios semelhantes.
 
@@ -27,7 +27,7 @@ b.      Feedback de empresas: implementar um sistema de feedback detalhado que i
 c.      Reconhecimento público e divulgação: destacar mensalmente o perfil das mães mais ativas ou de maior sucesso na plataforma, ajudando a amplificar sua visibilidade no mercado;
 
 
-##PERSONAS
+## PERSONAS
 
 ·        Persona 1: Laura Mendes
 
