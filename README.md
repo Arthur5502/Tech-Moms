@@ -10,7 +10,7 @@
 
 ## FUNCIONALIDADES
 
-1.   Plataforma de Networking e Comunidade: criar uma rede de apoio onde as mães freelancers possam trocar experiências, dicas, oportunidades, suporte mútuo, colaborar em projetos e obter orientação de outras profissionais que enfrentam desafios semelhantes.
+1.   # Plataforma de Networking e Comunidade: criar uma rede de apoio onde as mães freelancers possam trocar experiências, dicas, oportunidades, suporte mútuo, colaborar em projetos e obter orientação de outras profissionais que enfrentam desafios semelhantes.
 
 2.   Tutoriais e materiais básicos: fornecer materiais básicos que possam ajudar as mães que são mais iniciantes ou que estão voltando ao mercado a aprimorarem suas habilidades (Ex.: modelo de portfólio/currículo, templates prontos, etc.).
 
@@ -29,7 +29,7 @@ c.      Reconhecimento público e divulgação: destacar mensalmente o perfil da
 
 ## PERSONAS
 
-·        Persona 1: Laura Mendes
+·        PERSONA 1: Laura Mendes
 
 o   Idade: 34 anos
 
@@ -45,7 +45,7 @@ o   Motivações: Laura valoriza a flexibilidade para poder estar mais presente 
 
 o   Necessidades Específicas: Flexibilidade de horários, oportunidades de projetos variados, comunidade de suporte, e reconhecimento profissional.
 
-·        Persona 2: Fernanda Costa
+·        PERSONA 2: Fernanda Costa
 
 o   Idade: 29 anos
 
