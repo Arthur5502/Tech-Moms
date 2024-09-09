@@ -10,7 +10,7 @@
 
 ## FUNCIONALIDADES
 
-1.   # Plataforma de Networking e Comunidade: criar uma rede de apoio onde as mães freelancers possam trocar experiências, dicas, oportunidades, suporte mútuo, colaborar em projetos e obter orientação de outras profissionais que enfrentam desafios semelhantes.
+1.   # Plataforma de Networking e Comunidade: # criar uma rede de apoio onde as mães freelancers possam trocar experiências, dicas, oportunidades, suporte mútuo, colaborar em projetos e obter orientação de outras profissionais que enfrentam desafios semelhantes.
 
 2.   Tutoriais e materiais básicos: fornecer materiais básicos que possam ajudar as mães que são mais iniciantes ou que estão voltando ao mercado a aprimorarem suas habilidades (Ex.: modelo de portfólio/currículo, templates prontos, etc.).
 
