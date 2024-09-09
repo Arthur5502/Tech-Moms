@@ -2,7 +2,7 @@
 
 ## PROBLEMÁTICA
   
-  Mães com filhos pequenos no setor de tecnologia têm dificuldade em se realocar em trabalhos com jornadas “tradicionais” de horário e, por isso, acabam optando por alternativas como trabalhos freelance.  
+  Mães com filhos pequenos no setor de tecnologia têm dificuldades em se realocar em trabalhos com jornadas “tradicionais” de horário e, por isso, acabam optando por alternativas como trabalhos freelance.  
 
 ## SOLUÇÃO
 
