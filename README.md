@@ -6,4 +6,4 @@
 
 ## SOLUÇÃO
 
-  Uma plataforma para mães em tecnologia, proporcionando trabalho flexível e incentivos. Oferece recompensas por atividades, matching avançado com IA, tutoriais, e análise de mercado. Inclui comunidade, feedback detalhado e reconhecimento público para amplificar a visibilidade e sucesso.
+  Uma plataforma para mães em tecnologia, proporcionando trabalho flexível e incentivos. Oferece recompensas por atividades, matching avançado com Inteligência Artificial (IA), tutoriais, e análise de mercado. Inclui comunidade, feedback detalhado e reconhecimento público para amplificar a visibilidade e sucesso.
