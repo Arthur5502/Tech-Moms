@@ -28,38 +28,6 @@ a.      Visibilidade de portfólio e oportunidades de contratação: ofertar rea
 b.      Feedback de empresas: implementar um sistema de feedback detalhado que inclua métricas de desempenho, não apenas avaliações qualitativas, que serão incluídos no sistema de pontos também;
 
 c.      Reconhecimento público e divulgação: destacar mensalmente o perfil das mães mais ativas ou de maior sucesso na plataforma, ajudando a amplificar sua visibilidade no mercado;
-
-
-## PERSONAS
-
-·        PERSONA 1: Laura Mendes
-
-o   Idade: 34 anos
-
-o   Profissão: Desenvolvedora de Software
-
-o   Situação Familiar: Mãe de dois filhos pequenos (4 e 6 anos)
-
-o   Desafios: Laura tem dificuldade em encontrar um equilíbrio entre a demanda de seu trabalho e suas responsabilidades familiares. O horário rígido de um emprego tradicional a impede de estar presente em eventos escolares ou cuidar dos filhos durante o dia.
-
-o   Objetivos: Laura busca uma oportunidade de trabalho que ofereça flexibilidade total de horários, permitindo que ela ajuste sua carga de trabalho conforme suas necessidades familiares. Ela também deseja poder trabalhar em projetos que estejam alinhados com suas habilidades e experiência sem comprometer o tempo com a família.
-
-o   Motivações: Laura valoriza a flexibilidade para poder estar mais presente na vida de seus filhos e também a possibilidade de continuar a crescer profissionalmente. Ela se interessa por plataformas que oferecem sistema de pontuação e reconhecimento, que a ajudem a manter-se motivada e recompensada por seus esforços.
-
-o   Necessidades Específicas: Flexibilidade de horários, oportunidades de projetos variados, comunidade de suporte, e reconhecimento profissional.
-
-·        PERSONA 2: Fernanda Costa
-
-o   Idade: 29 anos
-
-o   Profissão: Designer Gráfico
-
-o   Situação Familiar: Mãe solteira de um filho de 3 anos
-
-o   Desafios: Fernanda precisa de uma solução de trabalho que se encaixe em sua rotina não apenas para cuidar de seu filho, mas também para gerir as responsabilidades domésticas. Ela tem dificuldade em encontrar projetos que se ajustem às suas horas disponíveis e que compreendam suas necessidades como mãe.
-
-o   Objetivos: Encontrar projetos de design gráfico que permitam horários flexíveis e que possibilitem a conciliação entre vida pessoal e profissional. Ela está interessada em uma plataforma que ofereça uma análise clara do mercado e suporte para definir preços de forma justa.
-
 o   Motivações: Fernanda busca uma plataforma que ofereça um bom suporte, desde tutoriais e materiais básicos até feedback detalhado sobre seu desempenho. Ela deseja ser reconhecida por seu trabalho e se beneficiar de um sistema de pontuação que a motive a se engajar mais.
 
 o   Necessidades Específicas: Flexibilidade no horário, suporte, feedback detalhado sobre a performance, e visibilidade no mercado.
