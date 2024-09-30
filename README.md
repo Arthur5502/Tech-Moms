@@ -29,5 +29,3 @@ b.      <strong>Feedback de empresas:</strong> Implementar um sistema de feedbac
 
 c.      <strong>Reconhecimento público e divulgação:</strong> Destacar mensalmente o perfil das mães mais ativas ou de maior sucesso na plataforma, ajudando a amplificar sua visibilidade no mercado;
 o   <strong>Motivações:</strong> Fernanda busca uma plataforma que ofereça um bom suporte, desde tutoriais e materiais básicos até feedback detalhado sobre seu desempenho. Ela deseja ser reconhecida por seu trabalho e se beneficiar de um sistema de pontuação que a motive a se engajar mais.
-
-o   <strong>Necessidades Específicas:</strong> Flexibilidade no horário, suporte, feedback detalhado sobre a performance, e visibilidade no mercado.
