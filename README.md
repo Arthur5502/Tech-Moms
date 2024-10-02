@@ -1,27 +1,70 @@
-# TechMoms
+# Getting Started with Create React App
 
-## PROBLEMÁTICA
-  
-  Mães com filhos pequenos no setor de tecnologia têm dificuldades em se realocar em trabalhos com jornadas tradicionais de horário e, por isso, acabam optando por alternativas como trabalhos de freelance.  
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## SOLUÇÃO
+## Available Scripts
 
-  Uma plataforma para mães no setor de TI, proporcionando flexibilidade e incentivos, como sistema de pontos, matching avançado, tutoriais, feedback detalhado e reconhecimento público para ampliar a visibilidade.
+In the project directory, you can run:
 
-  ![image](https://github.com/user-attachments/assets/8f17dd94-69c3-4415-bc77-4efacbb255b2)
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## FUNCIONALIDADES
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1.   <strong>Plataforma de Networking e Comunidade:</strong> Criar uma rede de apoio onde as mães freelancers possam trocar experiências, dicas, oportunidades, suporte mútuo, colaborar em projetos e obter orientação de outras profissionais que enfrentam desafios semelhantes.
+### `npm test`
 
-2.   <strong>Tutoriais e materiais básicos:</strong> Fornecer materiais básicos que possam ajudar as mães que são mais iniciantes ou que estão voltando ao mercado a aprimorarem suas habilidades (Ex.: modelo de portfólio/currículo, templates prontos, etc.).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-3.   <strong>Sistema de recompensas por atividades:</strong> Por cada tarefa completada ou projeto finalizado na plataforma, as mães ganham pontos, aumentando dessa forma a sua nota avaliativa dando um maior destaque na sua categoria;
+### `npm run build`
 
-a.      <strong>Visibilidade de portfólio e oportunidades de contratação:</strong> Ofertar realização de tarefas (como resoluções de problemas), a fim de demonstrar suas habilidades, permitindo que sejam encontradas por clientes em potencial que irão avaliar sua performance (gerando pontos e também possibilitando a oportunidade de ser contratada para um projeto);
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-b.      <strong>Feedback de empresas:</strong> Implementar um sistema de feedback detalhado que inclua métricas de desempenho, não apenas avaliações qualitativas, que serão incluídos no sistema de pontos também;
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-c.      <strong>Reconhecimento público e divulgação:</strong> Destacar mensalmente o perfil das mães mais ativas ou de maior sucesso na plataforma, ajudando a amplificar sua visibilidade no mercado;
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
