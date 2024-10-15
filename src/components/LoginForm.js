@@ -5,10 +5,6 @@ import { faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const LoginForm = () => {
   return (
-    <div className="login-container">
-      <div className="left-image">
-        <img src='../assets/Left_img.jpg' alt=""></img>
-      </div>
       <div className="login-box">
         <h2>Bem vindo de volta</h2>
         <h3>Entrar na Conta</h3>
