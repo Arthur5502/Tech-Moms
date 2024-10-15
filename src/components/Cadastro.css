@@ -1,9 +1,0 @@
-.cadastro {
-    text-align: center;
-}
-
-@media (max-width: 768px){
-    .cadastro {
-        padding: 20px;
-    }
-}
