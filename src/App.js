@@ -3,6 +3,7 @@ import Navbar from './components/NavBar'; // Ajuste o nome do arquivo ou a impor
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
+import CommunitySection from './components/CommunitySection';
 import ContactSection from './components/ContactSection';
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
             <HeroSection />
             <AboutSection />
             <ServicesSection />
+            <CommunitySection />
             <ContactSection />
         </React.Fragment>
     );
