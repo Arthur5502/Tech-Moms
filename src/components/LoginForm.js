@@ -31,7 +31,6 @@ const LoginForm = () => {
         </form>
         <p>Não tem uma conta? <a href="/Signup">Cadastrar</a></p>
       </div>
-    </div>
   );
 };
 
