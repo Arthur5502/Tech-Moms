@@ -1,0 +1,49 @@
+.serviceCard {
+  border-radius: 7px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px 16px;
+}
+
+.serviceCard.highlighted {
+  border: 1px solid var(--Gradient-Primary-bg, #f76680);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 26px 13px;
+}
+
+.iconWrapper {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid var(--Gradient-Primary-bg, #f76680);
+  background-color: var(--Gray-gray-50, #fafafa);
+}
+
+.title {
+  color: var(--Gray-gray-800, #2d3748);
+  margin-top: 20px;
+  font: 600 20px/1 Inter, sans-serif;
+}
+
+.title.highlighted {
+  background: var(--Gradient-Primary-bg, linear-gradient(225deg, #f76680 0%, #57007b 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 15px;
+}
+
+.description {
+  color: var(--Gray-gray-600, #718096);
+  font-feature-settings: "salt" on;
+  margin-top: 20px;
+  font: 400 14px/23px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.description.highlighted {
+  color: var(--Gray-gray-700, #4a5568);
+}
