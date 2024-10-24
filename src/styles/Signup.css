@@ -90,6 +90,7 @@ body {
   max-width: 600px;
   margin: 50px auto;
   width: 100%;
+  margin-top: -50px;
 }
 
 .signup-form h2 {
