@@ -1,11 +1,14 @@
 import React from 'react';
-import Home from '../components/Home';
-import './Home.css';
+import HomeContent from '../components/HomeContent';
+import '../styles/Home.css';
+import CommunitySection from '../components/CommunitySection';
+import '../styles/CommunitySection.css';
 
 const Home = () => {
   return (
     <div className="home-page">
-      <Home/>
+      <HomeContent/>
+      <CommunitySection />
     </div>
   );
 }
