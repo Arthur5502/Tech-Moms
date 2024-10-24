@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/LoginForm.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const LoginForm = () => {
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+    return () => {
+      document.body.classList.remove('no-scroll');
+    }
+  }, []);
   return (
     <div className="login-container">
       <div className="login-box">
