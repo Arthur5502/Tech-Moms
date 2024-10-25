@@ -1,19 +1,101 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import InputMask from 'react-input-mask';
 import '../styles/Signup.css';
 
 const Signup = () => {
   const navigate = useNavigate();
   const [isCompany, setIsCompany] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false);
+  const [formData, setFormData] = useState({
+    companyName: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    location: '',
+    cnpj: '',
+    firstName: '',
+    lastName: '',
+    cpf: '',
+    birthDate: ''
+  });
+
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const isValidDate = (dateString) => {
+    const regex = /^\d{2}\/\d{2}\/\d{4}$/;
+    if(!regex.test(dateString)) return false;
+
+    const [day, month, year] = dateString.split('/').map(Number);
+    const date = new Date(year, month - 1, day);
+    return(
+      date.getFullYear() === year &&
+      date.getMonth() === month - 1 &&
+      date.getDate() === day
+    );
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (termsAccepted) {
-      navigate('/');
-    } else {
+    const {
+      companyName,
+      email,
+      password,
+      confirmPassword,
+      location,
+      cnpj,
+      firstName,
+      lastName,
+      cpf,
+      birthDate
+    } = formData;
+
+    if (!termsAccepted) {
       alert("Você deve aceitar os termos de serviço e a política de privacidade.");
+      return;
     }
+
+    if (isCompany) {
+      if (!companyName || !email || !password || !confirmPassword || !location || !cnpj) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+      if(cnpj.length !== 18){
+        alert("CNPJ inválido.");
+        return;
+      }
+    } else {
+      if (!firstName || !lastName || !email || !password || !cpf || !birthDate) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+      if(cpf.length !== 14){
+        alert("CPF inválido.");
+        return;
+      }
+      if(!isValidDate(birthDate)){
+        alert("Data de aniversário inválida.");
+        return;
+      }
+    }
+
+    if (password !== confirmPassword) {
+      alert("As senhas não coincidem.");
+      return;
+    }
+
+    navigate('/');
   };
 
   return (
@@ -23,8 +105,18 @@ const Signup = () => {
         <h3>Crie sua Conta</h3>
 
         <div className="role-buttons">
-          <button className="freela-button" onClick={() => setIsCompany(false)}>Sou Freela</button>
-          <button className="hire-button" onClick={() => setIsCompany(true)}>Quero Contratar</button>
+          <button 
+            className={`freela-button ${!isCompany ? 'active' : ''}`} 
+            onClick={() => setIsCompany(false)}
+          >
+            Sou Freela
+          </button>
+          <button 
+            className={`hire-button ${isCompany ? 'active' : ''}`} 
+            onClick={() => setIsCompany(true)}
+          >
+            Quero Contratar
+          </button>
         </div>
 
         <form className="form" onSubmit={handleSubmit}>
@@ -33,29 +125,64 @@ const Signup = () => {
               <div className="form-row">
                 <div className="form-group">
                   <label>Nome da Empresa:</label>
-                  <input type="text" placeholder="Nome da empresa" required />
+                  <input 
+                    type="text" 
+                    name="companyName"
+                    placeholder="Nome da empresa" 
+                    value={formData.companyName}
+                    onChange={handleChange}
+                    required 
+                  />
                 </div>
                 <div className="form-group">
                   <label>Email:</label>
-                  <input type="email" placeholder="exemplo@gmail.com" required />
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Senha:</label>
-                  <input type="password" placeholder="*********" required />
-                </div>
-                <div className="form-group">
-                  <label>Localização:</label>
-                  <input type="text" placeholder="Endereço ou cidade" required />
+                  <input 
+                    type="email" 
+                    name="email"
+                    placeholder="exemplo@gmail.com" 
+                    value={formData.email}
+                    onChange={handleChange}
+                    required 
+                  />
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group">
                   <label>CNPJ:</label>
-                  <input type="text" placeholder="00.000.000/0000-00" required />
+                  <InputMask 
+                    mask= "99.999.999/9999-99"
+                    name="cnpj"
+                    placeholder="00.000.000/0000-00" 
+                    value={formData.cnpj}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Localização:</label>
+                  <input 
+                    type="text" 
+                    name="location"
+                    placeholder="Endereço ou cidade" 
+                    value={formData.location}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Senha:</label>
+                  <input 
+                    type="password" 
+                    name="password"
+                    placeholder="*********" 
+                    value={formData.password}
+                    onChange={handleChange}
+                    required 
+                  />
                 </div>
               </div>
             </>
@@ -64,22 +191,64 @@ const Signup = () => {
               <div className="form-row">
                 <div className="form-group">
                   <label>Nome:</label>
-                  <input type="text" placeholder="exemplo nome" required />
+                  <input 
+                    type="text" 
+                    name="firstName"
+                    placeholder="Insira seu nome" 
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required 
+                  />
                 </div>
                 <div className="form-group">
                   <label>Sobrenome:</label>
-                  <input type="text" placeholder="exemplo sobrenome" required />
+                  <input 
+                    type="text" 
+                    name="lastName"
+                    placeholder="Insira seu sobrenome" 
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required 
+                  />
                 </div>
               </div>
 
               <div className="form-row">
                 <div className="form-group">
                   <label>CPF:</label>
-                  <input type="text" placeholder="111.111.111-11" required />
+                  <InputMask 
+                    mask= "999.999.999-99"
+                    name="cpf"
+                    placeholder="111.111.111-11" 
+                    value={formData.cpf}
+                    onChange={handleChange}
+                    required 
+                  />
                 </div>
                 <div className="form-group">
                   <label>Data de Aniversário:</label>
-                  <input type="text" placeholder="mm/dd" required />
+                  <InputMask
+                    mask= "99/99/9999"
+                    name="birthDate"
+                    placeholder="mm/dd/aaaa" 
+                    value={formData.birthDate}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Senha:</label>
+                  <input 
+                    type="password" 
+                    name="password"
+                    placeholder="*********" 
+                    value={formData.password}
+                    onChange={handleChange}
+                    required 
+                  />
                 </div>
               </div>
             </>
@@ -88,7 +257,14 @@ const Signup = () => {
           <div className="form-row">
             <div className="form-group input-password">
               <label>Confirme sua Senha:</label>
-              <input type="password" placeholder="*********" required />
+              <input 
+                type="password" 
+                name="confirmPassword"
+                placeholder="*********" 
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                required 
+              />
             </div>
           </div>
 

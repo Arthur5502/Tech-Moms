@@ -1,82 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 .community-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-  }
-  
-  .community-section h2 {
-    font-size: 2rem;
-    color: #000;
-    margin-bottom: 30px;
-  }
-  
-  .testimonial-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  
-  .arrow-left, .arrow-right {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #800080;
-  }
-  
-  .testimonial-content {
-    max-width: 600px;
-    margin: 0 20px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feedback {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .name {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .role {
-    font-size: 1rem;
-    color: #888;
-    margin-bottom: 10px;
-  }
-  
-  .stars {
-    color: gold;
-    font-size: 1.5rem;
-  }
-  
-  .user-thumbnails {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .thumbnail {
-    text-align: center;
-    margin: 0 15px;
-    opacity: 0.5;
-  }
-  
-  .thumbnail.active {
-    opacity: 1;
-  }
-  
-  .user-circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin: 0 auto 10px;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.community-section h2 {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 51px;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 53px;
+}
+
+.arrow-left, .arrow-right {
+  background: none;
+  border: 3px solid #57007B;
+  font-size: 2rem;
+  font-weight: 100;
+  cursor: pointer;
+  color: #57007B;
+  width: 50px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #57007B;
+  margin: 0 180px;
+}
+
+.testimonial-content {
+  max-width: 600px;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.feedback {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.9;
+}
+
+
+.user-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.thumbnail {
+  text-align: center;
+  margin: 0 15px;
+  opacity: 0.5;
+}
+
+.thumbnail.active {
+  opacity: 1;
+}
+
+.user-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #E7DAED;
+  margin: 0 auto 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.user-circle.active {
+  box-shadow: 0px 0px 15px 4px rgba(126, 126, 126, 0.2);
+  width: 100px;
+  height: 100px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+.thumbnail .name {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000; 
+  margin-bottom: 5px;
+}
+
+.thumbnail.active .name {
+  font-weight: bold;
+  font-size: 1.1rem;       
+  color: #57007B;          
+}
+
+.thumbnail .role {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0;          
+}
+
+.thumbnail.active .role {
+  margin-top: -1px;
+  color: #000000;        
+}
+
+

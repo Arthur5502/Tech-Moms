@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/LoginForm.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const LoginForm = () => {
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+    return () => {
+      document.body.classList.remove('no-scroll');
+    }
+  }, []);
   return (
+    <div className="login-container">
       <div className="login-box">
         <h2>Bem vindo de volta</h2>
         <h3>Entrar na Conta</h3>
@@ -31,7 +38,7 @@ const LoginForm = () => {
         </form>
         <p>Não tem uma conta? <a href="/Signup">Cadastrar</a></p>
       </div>
-    </div>
+      </div>
   );
 };
 
