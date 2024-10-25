@@ -1,11 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-<<<<<<< HEAD
-import CommunitySection from './components/CommunitySection';
-=======
 import Home from './pages/Home';
->>>>>>> main
 import LoginForm from './components/LoginForm';
 import Signup from './components/Signup';
 import './styles/Global.css';
