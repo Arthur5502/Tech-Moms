@@ -4,7 +4,7 @@ import '../styles/CommunitySection.css';
 const testimonials = [
   {
     name: 'Usuário Nome',
-    role: 'Software Engineer',
+    role: 'Desenvolvimento',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
     rating: 5,
   },
@@ -12,17 +12,23 @@ const testimonials = [
     name: 'Usuário Nome',
     role: 'Designer',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
-    rating: 4,
+    rating: 5,
   },
   {
     name: 'Usuário Nome',
-    role: 'Desenvolvedor',
+    role: 'Software Engineer',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
     rating: 5,
   },
   {
     name: 'Usuário Nome',
-    role: 'Consultante',
+    role: 'Empresa',
+    feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
+    rating: 5,
+  },
+  {
+    name: 'Usuário Nome',
+    role: 'Contratante',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
     rating: 5,
   },
@@ -47,12 +53,7 @@ const CommunitySection = () => {
         
         <div className="testimonial-content">
           <p className="feedback">“{testimonials[currentIndex].feedback}”</p>
-          <p className="name"><strong>{testimonials[currentIndex].name}</strong></p>
-          <p className="role">{testimonials[currentIndex].role}</p>
-          <div className="stars">
-            {'★'.repeat(testimonials[currentIndex].rating)}
-            {'☆'.repeat(5 - testimonials[currentIndex].rating)}
-          </div>
+         
         </div>
         
         <button onClick={nextTestimonial} className="arrow-right">→</button>
@@ -60,9 +61,13 @@ const CommunitySection = () => {
       <div className="user-thumbnails">
         {testimonials.map((testimonial, index) => (
           <div key={index} className={`thumbnail ${index === currentIndex ? 'active' : ''}`}>
-            <div className="user-circle"></div>
-            <p>{testimonial.name}</p>
-            <p>{testimonial.role}</p>
+            <div className={`user-circle ${index === currentIndex ? 'active' : ''}`}></div>
+            <div className="stars">
+              {'★'.repeat(testimonial.rating)}
+              {'☆'.repeat(5 - testimonial.rating)}
+            </div>
+            <p className={`name ${index === currentIndex ? 'active' : ''}`}>{testimonial.name}</p>
+            <p className="role">{testimonial.role}</p>
           </div>
         ))}
       </div>
