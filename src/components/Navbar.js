@@ -7,9 +7,9 @@ const Navbar = () => {
             <div className="navbar-logo">TechMom</div>
             <ul className="navbar-menu">
                 <li><a href="/">Sobre</a></li>
-                <li><a href="/servicos">Serviços</a></li>
-                <li><a href="/beneficios">Benefícios</a></li>
-                <li><a href="/comunidade">Comunidade</a></li>
+                <li><a href="/">Serviços</a></li>
+                <li><a href="/">Benefícios</a></li>
+                <li><a href="/">Comunidade</a></li>
                 <li><a href="/">Funcionalidades</a></li>
             </ul>
             <a href="/login" className="navbar-login">Login</a>
