@@ -19,7 +19,6 @@ const App = () => {
         <Route path="/comunidade" element={<CommunitySection />} />
         <Route path="/" element={<Home />} />
       </Routes>
-      <CommunitySection />
     </Router>
   );
 };
