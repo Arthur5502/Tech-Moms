@@ -2,12 +2,21 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import '../styles/Carousel.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers, faBookOpen, faStar, faEye, faComments, faAward } from '@fortawesome/free-solid-svg-icons';
 const Caroussel = [
-    { title: 'Serviço 1', description: 'Descrição 1', icon: '🔧' },
-    { title: 'Serviço 2', description: 'Descrição 2', icon: '💻' },
-    { title: 'Serviço 3', description: 'Descrição 3', icon: '🚀' },
-    { title: 'Serviço 4', description: 'Descrição 4', icon: '🔧' },
-    { title: 'Serviço 5', description: 'Descrição 5', icon: '💻' },
+    { title: 'Networking e Comunidade', description: 'Uma plataforma para mães freelancers se conectarem, trocarem experiências e colaborarem em projetos.',
+    icon: <FontAwesomeIcon icon={faUsers} />},
+    { title: 'Tutoriais e Materiais', description: 'Fornecimento de recursos educativos, como modelos de portfólio e currículo, para ajudar mães iniciantes ou que estão retornando ao mercado.',
+     icon: <FontAwesomeIcon icon={faBookOpen}/> },
+    { title: 'Sistema de Pontos', description: 'Um sistema que recompensa mães por tarefas e projetos completados, aumentando sua visibilidade e nota avaliativa.',
+    icon: <FontAwesomeIcon icon={faStar}/> },
+    { title: 'Visibilidade de Portfólio', description: 'Oportunidades para mães demonstrarem suas habilidades através de tarefas práticas, facilitando a conexão com clientes.',
+    icon: <FontAwesomeIcon icon={faEye}/> },
+    { title: 'Feedback de Empresas', description: 'Implementação de um sistema que fornece feedback detalhado e métricas de desempenho, contribuindo para o sistema de pontos.', 
+    icon: <FontAwesomeIcon icon={faComments}/> },
+    { title: 'Reconhecimento Público', description: 'Destaque mensal para as mães mais ativas ou bem-sucedidas, aumentando sua visibilidade no mercado.',
+    icon: <FontAwesomeIcon icon={faAward}/> },
 ];
 const Carousel = () => {
     const carousel = useRef();
@@ -17,6 +26,7 @@ const Carousel = () => {
     }, [])
     return (
         <div className="teste">
+            <h1 className="titulo">Serviços</h1>
             <motion.div ref={carousel} className="carousel" whileTap={{cursor: "grabbing"}}>
             <motion.div 
             className="inner" 
@@ -32,12 +42,12 @@ const Carousel = () => {
                 {item.icon} 
                 </span>
                 <h1>{item.title}</h1>
-                <p>{item.description}</p>
+                <p className="description">{item.description}</p>
                 </motion.div>
             ))}
              </motion.div>  
             </motion.div>
             </div>
-    );
+    ); 
 };
 export default Carousel;
