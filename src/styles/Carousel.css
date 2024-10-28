@@ -1,0 +1,25 @@
+.inner {
+  display: flex;
+}
+.item{
+  min-height: 200px;
+  min-width: 400px;
+  height: 30%;
+  width: 30%;
+  border-radius: 12px;
+  padding: 36px 16px;
+  border: 10px solid;
+  border-color: #fafafa;
+}
+.carousel{
+  cursor: grab;
+  overflow: hidden;
+  background: #ffff;
+}
+.item .icon{
+width: 58px;
+height: 58px;
+border-radius: 50%;
+border: 3px solid var(--Gradient-Primary-bg, #f76680);
+background-color: var(--Gray-gray-50, #fafafa);
+}
