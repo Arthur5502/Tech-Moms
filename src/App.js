@@ -7,6 +7,7 @@ import Signup from './components/Signup';
 import './styles/Global.css';
 import Carousel from './components/Carousel';
 import CommunitySection from './components/CommunitySection';
+import ApproachSection from './components/ApproachSection';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/login" element={<LoginForm />} />
         <Route path="/servicos" element={<Carousel />} />
         <Route path="/comunidade" element={<CommunitySection />} />
+        <Route path="/abordagem" element={<ApproachSection />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
