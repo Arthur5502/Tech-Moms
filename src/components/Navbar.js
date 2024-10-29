@@ -7,10 +7,10 @@ const Navbar = () => {
             <div className="navbar-logo"><a href="/">TechMom</a></div>
             <ul className="navbar-menu">
                 <li><a href="/">Sobre</a></li>
-                <li><a href="/servicos">Serviços</a></li>
-                <li><a href="/beneficios">Benefícios</a></li>
-                <li><a href="/comunidade">Comunidade</a></li>
-                <li><a href="/">Funcionalidades</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
+                <li><a href="#abordagem">Abordagem</a></li>
             </ul>
             <div className="navbar-button">
                 <a href="/login" className="navbar-login">Login</a>
