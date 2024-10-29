@@ -15,6 +15,12 @@ import Python_icon from '../assets/Python.png';
 import Cplusplus_icon from '../assets/RubyOnRails.png';
 import Go_icon from '../assets/Go.png';
 import MongoDB_icon from '../assets/mongoDB.png';
+import Angular_icon from '../assets/angular.png';
+import Html_icon from '../assets/HTML.png';
+import Css_icon from '../assets/CSS.png';
+import Js_icon from '../assets/Js.png';
+import Tp_icon from '../assets/typescript.png';
+import React_icon from '../assets/react.png';
 
 const Card = ({ icon, title, description }) => (
   <div className="approach-card">
@@ -30,14 +36,18 @@ const ApproachSection = () => {
   const cardsGroup1 = [
     { icon: UX_UI_icon, title: 'UX/UI', description: 'Transforme suas ideias em experiências digitais incríveis. Serviços de design UX/UI com foco em criar interfaces intuitivas e atrativas.' },
     { icon: Desenvolvimento_icon, title: 'Desenvolvimento de Software', description: 'Transforme suas ideias em soluções digitais. Serviços de Desenvolvimento de Software para atender as necessidades das freelancers.' },
-    { icon: Interatividade_icon, title: 'Interatividade & Comunidade', description: 'Junte-se à comunidade de mães freelancers. Compartilhe experiências, dicas e oportunidades.' }
   ];
 
   const cardsGroup2 = [
+    { icon: Interatividade_icon, title: 'Interatividade & Comunidade', description: 'Junte-se à comunidade de mães freelancers. Compartilhe experiências, dicas e oportunidades.' },
     { icon: Segurança_icon, title: 'Segurança & Integridade', description: 'Garantimos segurança e integridade para seus projetos e dados.' },
+    
+  ];
+
+  const cardsGroup3 = [
     { icon: Revisao_icon, title: 'Revisão de Entregas', description: 'Garantimos a revisão de entregas para que atendam aos mais altos padrões.' },
     { icon: Garantia_icon, title: 'Garantia de Qualidade & Teste', description: 'Oferecemos serviços de Garantia de Qualidade e Testes para garantir o melhor resultado.' }
-  ];
+  ]
 
   const technologies = {
     Backend: [
@@ -52,7 +62,12 @@ const ApproachSection = () => {
       { icon: MongoDB_icon, title: 'MongoDB' }
     ],
     Frontend: [
-        { icon: Go_icon, title: 'Go' },
+        { icon: Angular_icon, title: 'Angular' },
+        { icon: Tp_icon, title: 'typescript' },
+        { icon: Html_icon, title: 'html' },
+        { icon: Css_icon, title: 'CSS' },
+        { icon: React_icon, title: 'React' },
+        { icon: Js_icon, title: 'javascript' },
     ],
     Dados: [
         { icon: Go_icon, title: 'Go' },
@@ -81,6 +96,12 @@ const ApproachSection = () => {
 
       <div className="cards-container cards-group-separator">
         {cardsGroup2.map((card, index) => (
+          <Card key={index} {...card} />
+        ))}
+      </div>
+
+      <div className="cards-container cards-group-separator">
+        {cardsGroup3.map((card, index) => (
           <Card key={index} {...card} />
         ))}
       </div>

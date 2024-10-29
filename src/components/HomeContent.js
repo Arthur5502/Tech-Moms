@@ -16,7 +16,7 @@ const HomeContent = () => {
     <div className="subhead">
         <p>Nós conectamos freelancers com os projetos perfeitos na nossa comunidade de mães e empresas</p>
     </div>
-    <Link to="/login">
+    <Link to="/signup">
     <button className="inscreva-btn">
         
         <span >Inscreva-se!</span>

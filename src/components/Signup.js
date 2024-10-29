@@ -101,22 +101,26 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <main className="signup-form">
-        <h2>Bem-vinda(o)!</h2>
-        <h3>Crie sua Conta</h3>
+        <div className="signup-header">
+          <div className="signup-text">
+            <h2>Bem-vinda(o)!</h2>
+            <h3>Crie sua Conta</h3>
+          </div>
 
-        <div className="role-buttons">
-          <button 
-            className={`freela-button ${!isCompany ? 'active' : ''}`} 
-            onClick={() => setIsCompany(false)}
-          >
-            Sou Freela
-          </button>
-          <button 
-            className={`hire-button ${isCompany ? 'active' : ''}`} 
-            onClick={() => setIsCompany(true)}
-          >
-            Quero Contratar
-          </button>
+          <div className="role-buttons">
+            <button 
+              className={`freela-button ${!isCompany ? 'active' : ''}`} 
+              onClick={() => setIsCompany(false)}
+            >
+              Sou Freela
+            </button>
+            <button 
+              className={`hire-button ${isCompany ? 'active' : ''}`} 
+              onClick={() => setIsCompany(true)}
+            >
+              Quero Contratar
+            </button>
+          </div>
         </div>
 
         <form className="form" onSubmit={handleSubmit}>
@@ -180,6 +184,17 @@ const Signup = () => {
                     name="password"
                     placeholder="*********" 
                     value={formData.password}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+                <div className="form-group input-password">
+                  <label>Confirme sua Senha:</label>
+                  <input 
+                    type="password" 
+                    name="confirmPassword"
+                    placeholder="*********" 
+                    value={formData.confirmPassword}
                     onChange={handleChange}
                     required 
                   />
@@ -250,24 +265,20 @@ const Signup = () => {
                     required 
                   />
                 </div>
+                <div className="form-group input-password">
+                  <label>Confirme sua Senha:</label>
+                  <input 
+                    type="password" 
+                    name="confirmPassword"
+                    placeholder="*********" 
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
               </div>
             </>
           )}
-
-          <div className="form-row">
-            <div className="form-group input-password">
-              <label>Confirme sua Senha:</label>
-              <input 
-                type="password" 
-                name="confirmPassword"
-                placeholder="*********" 
-                value={formData.confirmPassword}
-                onChange={handleChange}
-                required 
-              />
-            </div>
-          </div>
-
           <div className="terms-container">
             <input 
               type="checkbox" 

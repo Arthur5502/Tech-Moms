@@ -2,10 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: lightgray;
+    background-color: white;
     color: white;
     overflow-x: auto;
-    font-family: 'Inter', sans-serif;
   }
   
   .footer-left a {
@@ -26,6 +25,6 @@
   
   .footer-left a:hover,
   .footer-right a:hover {
-    color: #61dafb;
+    color: #61dafb; /* Cor de destaque ao passar o mouse */
   }
   

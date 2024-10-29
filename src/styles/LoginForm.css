@@ -10,7 +10,7 @@ html, body {
   height: 100vh;
   background: linear-gradient(135deg, #f0f0f5, #e5e5f7);
   font-family: Arial, sans-serif;
-  padding-left: 800px;
+  padding-left: 100vh;
   background-image: url('../assets/Background_img.jpg');
   background-size: cover;
   background-position: center;
@@ -19,8 +19,9 @@ html, body {
 .login-box {
   background-color: white;
   border-radius: 8px;
-  padding: 40px 40px 60px;
-  width: 400px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
   min-height: 500px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
