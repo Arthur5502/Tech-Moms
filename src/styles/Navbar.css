@@ -83,3 +83,7 @@
 .navbar-login:hover {
   background-color: #ee0979;
 }
+
+html {
+  scroll-behavior: smooth;
+}
