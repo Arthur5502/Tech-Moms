@@ -12,10 +12,18 @@ const Home = () => {
   return (
     <div className="home-page">
       <HomeContent/>
-      <Carousel />
-      <Beneficios />
-      <CommunitySection />
-      <ApproachSection />
+      <section id="servicos">
+        <Carousel />
+      </section>
+      <section id="beneficios">
+        <Beneficios />
+      </section>
+      <section id="comunidade">
+        <CommunitySection />
+      </section>
+      <section id="abordagem">
+        <ApproachSection />
+      </section>
       <Footer />
     </div>
   );
