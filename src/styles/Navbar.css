@@ -4,9 +4,19 @@
   align-items: center;
   padding: 1rem 2rem; 
   background-color: #ffffff; 
+  font-family: 'Inter' , sans-serif;
+}
+
+.navbar-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar-logo {
+  display: flex;
+  align-items: center;
   width: 92px;
   height: 35px;
   flex-shrink: 0;
@@ -29,7 +39,7 @@
 
 .navbar-menu li {
   margin: 0 1rem;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar-cadastrar {
@@ -40,7 +50,7 @@
   border-radius: 4px;
 }
 
-.navbar-menu a{
+.navbar-menu a {
   text-decoration: none;
     color: #333; 
     transition: color 0.3s;
@@ -51,7 +61,17 @@
 }
 
 .navbar-login {
-  background: linear-gradient(to right, #ff6a00, #ee0979);
+  background: linear-gradient(to right, #FF6161, #57007B);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+}
+
+.navbar-cadastro {
+  background: linear-gradient(to right, #626dd1, #57007B);
   color: white;
   border: none;
   border-radius: 5px;

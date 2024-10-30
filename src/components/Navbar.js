@@ -4,7 +4,7 @@ import '../styles/Navbar.css';
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="navbar-logo">TechMom</div>
+            <div className="navbar-logo"><a href="/">TechMom</a></div>
             <ul className="navbar-menu">
                 <li><a href="/">Sobre</a></li>
                 <li><a href="/servicos">Serviços</a></li>
@@ -12,7 +12,10 @@ const Navbar = () => {
                 <li><a href="/comunidade">Comunidade</a></li>
                 <li><a href="/">Funcionalidades</a></li>
             </ul>
-            <a href="/login" className="navbar-login">Login</a>
+            <div className="navbar-button">
+                <a href="/login" className="navbar-login">Login</a>
+                <a href="/signup" className="navbar-cadastro">Cadastre-se</a>
+            </div>
         </nav>
     );
 };

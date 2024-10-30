@@ -17,6 +17,7 @@
     height: 200px;
     z-index: 2;
   }*/
+  
 
   .container{
     display: flex;
@@ -29,6 +30,7 @@
     background-position: center, top right;
     background-repeat: no-repeat, no-repeat;
     position: relative;
+    font-family: 'Inter';
   }
 
 .container-h{
@@ -40,6 +42,7 @@
   align-items: flex-start; 
   gap: 8px; 
   display: inline-flex;
+  font-family: 'Inter';
 }
 
 .subhead {
@@ -47,7 +50,7 @@
   height: 40px; 
   color: #0a0a0a; 
   font-size: 18px; 
-  font-family: Arial; 
+  font-family: 'Inter' , sans-serif; 
   font-weight: 400; 
   line-height: 25px; 
 }
@@ -67,7 +70,7 @@
   cursor: pointer;
   border: none;
   font-size: 15px; 
-  font-family: Arial; 
+  font-family: 'Inter', sans-serif; 
   font-weight: 300; 
   line-height: 12px; 
   word-wrap: break-word;
