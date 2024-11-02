@@ -7,7 +7,6 @@ import NavbarDashboard from '../components/Dashboard/NavbarDashboard';
 function DashBoardUsuario() {
     return (
         <div className="dashboard-section-sells-contractors">
-            <NavbarDashboard />
             <FreelaData />
             <Contractors />
         </div>

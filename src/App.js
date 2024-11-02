@@ -9,13 +9,17 @@ import Carousel from './components/Home/Carousel';
 import CommunitySection from './components/Home/CommunitySection';
 import About from './components/Home/About';
 import DashBoardUsuario from './pages/DashBoardUsuario';
+import NavbarDashboard from './components/Dashboard/NavbarDashboard';
 
 const Main = () => {
   const location = useLocation();
 
   return (
     <>
-      {location.pathname !== '/dashboardUsuario' && <Navbar />}
+       <Routes>
+        <Route path="/dashboardUsuario" element={<NavbarDashboard />} />
+        <Route path="*" element={<Navbar />} />
+      </Routes>
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<LoginForm />} />
