@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter';
   background: linear-gradient(45deg, #f0f0f5, #e6e6fa);
 }
 
@@ -10,9 +10,9 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  padding: 20px;
-  background-image: url(../assets/Background_signup.jpg);
+  height: 100dvh;
+  padding: 1dvh;
+  background-image: url(../../assets/Home/Background_signup.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .hamburger {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: space-between;
   width: 25px;

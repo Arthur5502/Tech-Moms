@@ -5,6 +5,7 @@
     background-color: white;
     color: white;
     overflow-x: auto;
+    align-self: flex-end;
   }
   
   .footer-left a {

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import '../styles/LoginForm.css';
+import '../../styles/Home/LoginForm.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
   useEffect(() => {
@@ -34,7 +35,9 @@ const LoginForm = () => {
             </label>
             <a href="/">Esqueceu a Senha?</a>
           </div>
+          <Link to="/dashboardUsuario">
           <button type="submit" className="login-btn submit">Login</button>
+          </Link>
         </form>
         <p>Não tem uma conta? <a href="/Signup">Cadastrar</a></p>
       </div>

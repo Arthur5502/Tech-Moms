@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Home.css';
+import '../../styles/Home/Home.css';
 import { Link } from 'react-router-dom';
 
 const HomeContent = () => {
@@ -17,8 +17,7 @@ const HomeContent = () => {
         <p>Nós conectamos freelancers com os projetos perfeitos na nossa comunidade de mães e empresas</p>
     </div>
     <Link to="/signup">
-    <button className="inscreva-btn">
-        
+    <button className="inscreva-btn">     
         <span >Inscreva-se!</span>
     </button>
     </Link>

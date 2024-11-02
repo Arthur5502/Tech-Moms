@@ -1,26 +1,39 @@
-import React, { useRef } from 'react';
-import '../styles/Beneficios.css';
-import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.png';
-import image3 from '../assets/image3.png';
-import image4 from '../assets/image4.png';
-import image5 from '../assets/image5.png';
+import React, { useRef, useState } from 'react';
+import '../../styles/Home/Beneficios.css';
+import image1 from '../../assets/Home/image1.jpg';
+import image2 from '../../assets/Home/image2.png';
+import image3 from '../../assets/Home/image3.png';
+import image4 from '../../assets/Home/image4.png';
+import image5 from '../../assets/Home/image5.png';
+const HeaderBeneficios = () => {
+  const [isCompany, setIsCompany] = useState(false);
 
-const HeaderBeneficios = () => (
-  <div className="header-beneficios">
-    <div className="purple-bar"></div>
-    <div className="header-content-beneficios">
-      <div>
-        <h2>Nossos Benefícios</h2>
-        <h3>Contrate e Trabalhe</h3>
-      </div>
-      <div className="button-group">
-        <button className="button freela">Freelancer</button>
-        <button className="button contratar">Contratante</button>
+  return (
+    <div className="header-beneficios">
+      <div className="purple-bar"></div>
+      <div className="header-content-beneficios">
+        <div>
+          <h2>Nossos Benefícios</h2>
+          <h3>Contrate e Trabalhe</h3>
+        </div>
+        <div className="button-group">
+          <button 
+            className={`freela button ${!isCompany ? 'active' : ''}`} 
+            onClick={() => setIsCompany(false)}
+          >
+            Sou Freela
+          </button>
+          <button 
+            className={`button contratar ${isCompany ? 'active' : ''}`} 
+            onClick={() => setIsCompany(true)}
+          >
+            Quero Contratar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Card = ({ imageSrc, text }) => (
   <div className="card">

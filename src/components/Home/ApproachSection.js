@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
-import '../styles/ApproachSection.css';
-import UX_UI_icon from '../assets/UX_UI.png';
-import Desenvolvimento_icon from '../assets/Desenvolvimento.png';
-import Interatividade_icon from '../assets/Interitividade.png';
-import Segurança_icon from '../assets/Seguranca.png';
-import Revisao_icon from '../assets/Revisao.png';
-import Garantia_icon from '../assets/Garantia.png';
-import NodeJS_icon from '../assets/NodeJS.png';
-import PHP_icon from '../assets/PHP.png';
-import MySQL_icon from '../assets/MySQL.png';
-import Java_icon from '../assets/Java.png';
-import DotNet_icon from '../assets/NETCore.png';
-import Python_icon from '../assets/Python.png';
-import Cplusplus_icon from '../assets/RubyOnRails.png';
-import Go_icon from '../assets/Go.png';
-import MongoDB_icon from '../assets/mongoDB.png';
-import Angular_icon from '../assets/angular.png';
-import Html_icon from '../assets/HTML.png';
-import Css_icon from '../assets/CSS.png';
-import Js_icon from '../assets/Js.png';
-import Tp_icon from '../assets/typescript.png';
-import React_icon from '../assets/react.png';
+import '../../styles/Home/ApproachSection.css';
+import UX_UI_icon from '../../assets/Home/UX_UI.png';
+import Desenvolvimento_icon from '../../assets/Home/Desenvolvimento.png';
+import Interatividade_icon from '../../assets/Home/Interitividade.png';
+import Segurança_icon from '../../assets/Home/Seguranca.png';
+import Revisao_icon from '../../assets/Home/Revisao.png';
+import Garantia_icon from '../../assets/Home/Garantia.png';
+import NodeJS_icon from '../../assets/Home/NodeJS.png';
+import PHP_icon from '../../assets/Home/PHP.png';
+import MySQL_icon from '../../assets/Home/MySQL.png';
+import Java_icon from '../../assets/Home/Java.png';
+import DotNet_icon from '../../assets/Home/NETCore.png';
+import Python_icon from '../../assets/Home/Python.png';
+import Cplusplus_icon from '../../assets/Home/RubyOnRails.png';
+import Go_icon from '../../assets/Home/Go.png';
+import MongoDB_icon from '../../assets/Home/mongoDB.png';
+import Angular_icon from '../../assets/Home/angular.png';
+import Html_icon from '../../assets/Home/HTML.png';
+import Css_icon from '../../assets/Home/CSS.png';
+import Js_icon from '../../assets/Home/Js.png';
+import Tp_icon from '../../assets/Home/typescript.png';
+import React_icon from '../../assets/Home/react.png';
 
 const Card = ({ icon, title, description }) => (
   <div className="approach-card">
