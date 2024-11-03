@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdSettings, MdLogout, MdShoppingCart, MdChat, MdFavorite, MdDashboard, MdLibraryBooks } from 'react-icons/md';
+import { MdSettings, MdLogout, MdShoppingCart, MdEmail, MdFavorite, MdDashboard, MdSchool, MdHome } from 'react-icons/md';
 import { Link, useLocation } from 'react-router-dom';
 import '../../styles/Dashboard/Sidebar.css';
 
@@ -17,7 +17,7 @@ function Sidebar({ isExpanded }) {
         </li>
         <li>
           <a href="#">
-            <MdDashboard className="react-icon"/>
+            <MdHome className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Feed</span>
           </a>
         </li>
@@ -29,7 +29,7 @@ function Sidebar({ isExpanded }) {
         </li>
         <li>
           <a href="#">
-            <MdChat className="react-icon"/>
+            <MdEmail className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Chats</span>
           </a>
         </li>
@@ -41,7 +41,7 @@ function Sidebar({ isExpanded }) {
         </li>
         <li>
           <a href="#">
-            <MdLibraryBooks className="react-icon"/>
+            <MdSchool className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Cursos</span>
           </a>
         </li>
