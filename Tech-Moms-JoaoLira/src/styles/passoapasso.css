@@ -45,6 +45,7 @@ h1 strong {
     height: 3px;
     background-color: #e10752;
     margin: 40px auto 20px auto;
+    position: relative;
 }
 
 .workflow-steps {
@@ -100,6 +101,22 @@ h1 strong {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+}
+
+.step::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background-color: #e10752;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step:nth-child(1)::before, 
+.step:nth-child(4)::before {
+    display: none;
 }
 
 @media (max-width: 768px) {
