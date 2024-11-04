@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import InputMask from 'react-input-mask';
-import '../styles/Signup.css';
+import '../../styles/Home/Signup.css';
 
 const Signup = () => {
   const navigate = useNavigate();

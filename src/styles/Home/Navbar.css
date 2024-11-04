@@ -4,7 +4,7 @@
   align-items: center;
   padding: 1rem 2rem; 
   background-color: #ffffff; 
-  font-family: 'Inter' , sans-serif;
+  font-family: 'Inter';
 }
 
 .navbar-button {
@@ -22,7 +22,7 @@
   flex-shrink: 0;
   color: #000;
   text-align: center;
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Pacifico';
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -82,4 +82,8 @@
 
 .navbar-login:hover {
   background-color: #ee0979;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
-import '../styles/Carousel.css';
+import '../../styles/Home/Carousel.css';
 import { FaUsers, FaFolderOpen, FaMedal, FaStar, FaComment, FaEye } from 'react-icons/fa';
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
 

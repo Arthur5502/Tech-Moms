@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/CommunitySection.css';
+import '../../styles/Home/CommunitySection.css';
 
 const testimonials = [
   {

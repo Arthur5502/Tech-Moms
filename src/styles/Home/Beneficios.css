@@ -16,10 +16,11 @@
   align-items: center; 
   margin-right: 50px; 
 }
+
 .header-content-beneficios h2 {
   font-size: 30px;
   font-weight: 120px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   color: #1A202C;
   margin: 0;
 }
@@ -117,6 +118,7 @@
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px #C4C4C4;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card p {
@@ -239,4 +241,14 @@
   .card {
     width: 160px;
   }
+}
+
+.freela.active, .contratar.active {
+  opacity: 1;
+}
+
+.freela:not(.active), .contratar:not(.active) {
+  background-color: linear-gradient(135deg, #ccc, #e0e0e0);
+  color: white;
+  opacity: 0.4;
 }
