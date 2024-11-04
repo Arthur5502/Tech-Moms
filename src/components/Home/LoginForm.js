@@ -1,9 +1,16 @@
-import React from 'react';
-import '../styles/LoginForm.css';
+import React, { useEffect } from 'react';
+import '../../styles/Home/LoginForm.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+    return () => {
+      document.body.classList.remove('no-scroll');
+    }
+  }, []);
   return (
     <div className="login-container">
       <div className="login-box">
@@ -28,7 +35,9 @@ const LoginForm = () => {
             </label>
             <a href="/">Esqueceu a Senha?</a>
           </div>
+          <Link to="/dashboardUsuario">
           <button type="submit" className="login-btn submit">Login</button>
+          </Link>
         </form>
         <p>Não tem uma conta? <a href="/Signup">Cadastrar</a></p>
       </div>

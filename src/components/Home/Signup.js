@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Signup.css';
+import InputMask from 'react-input-mask';
+import '../../styles/Home/Signup.css';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -19,9 +20,30 @@ const Signup = () => {
     birthDate: ''
   });
 
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const isValidDate = (dateString) => {
+    const regex = /^\d{2}\/\d{2}\/\d{4}$/;
+    if(!regex.test(dateString)) return false;
+
+    const [day, month, year] = dateString.split('/').map(Number);
+    const date = new Date(year, month - 1, day);
+    return(
+      date.getFullYear() === year &&
+      date.getMonth() === month - 1 &&
+      date.getDate() === day
+    );
   };
 
   const handleSubmit = (e) => {
@@ -49,9 +71,21 @@ const Signup = () => {
         alert("Por favor, preencha todos os campos.");
         return;
       }
+      if(cnpj.length !== 18){
+        alert("CNPJ inválido.");
+        return;
+      }
     } else {
-      if (!firstName || !lastName || !email || !password || !confirmPassword || !cpf || !birthDate) {
+      if (!firstName || !lastName || !email || !password || !cpf || !birthDate) {
         alert("Por favor, preencha todos os campos.");
+        return;
+      }
+      if(cpf.length !== 14){
+        alert("CPF inválido.");
+        return;
+      }
+      if(!isValidDate(birthDate)){
+        alert("Data de aniversário inválida.");
         return;
       }
     }
@@ -67,22 +101,26 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <main className="signup-form">
-        <h2>Bem-vinda(o)!</h2>
-        <h3>Crie sua Conta</h3>
+        <div className="signup-header">
+          <div className="signup-text">
+            <h2>Bem-vinda(o)!</h2>
+            <h3>Crie sua Conta</h3>
+          </div>
 
-        <div className="role-buttons">
-          <button 
-            className={`freela-button ${!isCompany ? 'active' : ''}`} 
-            onClick={() => setIsCompany(false)}
-          >
-            Sou Freela
-          </button>
-          <button 
-            className={`hire-button ${isCompany ? 'active' : ''}`} 
-            onClick={() => setIsCompany(true)}
-          >
-            Quero Contratar
-          </button>
+          <div className="role-buttons">
+            <button 
+              className={`freela-button ${!isCompany ? 'active' : ''}`} 
+              onClick={() => setIsCompany(false)}
+            >
+              Sou Freela
+            </button>
+            <button 
+              className={`hire-button ${isCompany ? 'active' : ''}`} 
+              onClick={() => setIsCompany(true)}
+            >
+              Quero Contratar
+            </button>
+          </div>
         </div>
 
         <form className="form" onSubmit={handleSubmit}>
@@ -116,8 +154,8 @@ const Signup = () => {
               <div className="form-row">
                 <div className="form-group">
                   <label>CNPJ:</label>
-                  <input 
-                    type="text" 
+                  <InputMask 
+                    mask= "99.999.999/9999-99"
                     name="cnpj"
                     placeholder="00.000.000/0000-00" 
                     value={formData.cnpj}
@@ -146,6 +184,17 @@ const Signup = () => {
                     name="password"
                     placeholder="*********" 
                     value={formData.password}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
+                <div className="form-group input-password">
+                  <label>Confirme sua Senha:</label>
+                  <input 
+                    type="password" 
+                    name="confirmPassword"
+                    placeholder="*********" 
+                    value={formData.confirmPassword}
                     onChange={handleChange}
                     required 
                   />
@@ -182,8 +231,8 @@ const Signup = () => {
               <div className="form-row">
                 <div className="form-group">
                   <label>CPF:</label>
-                  <input 
-                    type="text" 
+                  <InputMask 
+                    mask= "999.999.999-99"
                     name="cpf"
                     placeholder="111.111.111-11" 
                     value={formData.cpf}
@@ -193,10 +242,10 @@ const Signup = () => {
                 </div>
                 <div className="form-group">
                   <label>Data de Aniversário:</label>
-                  <input 
-                    type="text" 
+                  <InputMask
+                    mask= "99/99/9999"
                     name="birthDate"
-                    placeholder="mm/dd" 
+                    placeholder="mm/dd/aaaa" 
                     value={formData.birthDate}
                     onChange={handleChange}
                     required 
@@ -216,24 +265,20 @@ const Signup = () => {
                     required 
                   />
                 </div>
+                <div className="form-group input-password">
+                  <label>Confirme sua Senha:</label>
+                  <input 
+                    type="password" 
+                    name="confirmPassword"
+                    placeholder="*********" 
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
+                    required 
+                  />
+                </div>
               </div>
             </>
           )}
-
-          <div className="form-row">
-            <div className="form-group input-password">
-              <label>Confirme sua Senha:</label>
-              <input 
-                type="password" 
-                name="confirmPassword"
-                placeholder="*********" 
-                value={formData.confirmPassword}
-                onChange={handleChange}
-                required 
-              />
-            </div>
-          </div>
-
           <div className="terms-container">
             <input 
               type="checkbox" 

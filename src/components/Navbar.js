@@ -13,6 +13,7 @@ const Navbar = () => {
                 <li><a href="/">Funcionalidades</a></li>
             </ul>
             <a href="/login" className="navbar-login">Login</a>
+            {/* adicionar botao cadastrar na nav */}
         </nav>
     );
 };
