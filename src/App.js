@@ -12,6 +12,7 @@ import DashBoardUsuario from './pages/DashBoardUsuario';
 import DashBoardEmpresa from './pages/DashBoardEmpresa';
 import NavbarUsuario from './components/DashboardUsuario/NavbarUsuario';
 import NavbarBusiness from './components/DashboardEmpresa/NavbarBusiness';
+import Sidebar from './components/FeedOportunidades/Sidebar';
 
 const Main = () => {
   return (
@@ -19,6 +20,7 @@ const Main = () => {
        <Routes>
         <Route path="/dashboardUsuario" element={<NavbarUsuario />} />
         <Route path="/dashboardEmpresa" element={<NavbarBusiness />} />
+        <Route path="/oportunidades" element={<Sidebar />} />
         <Route path="*" element={<Navbar />} />
       </Routes>
       <Routes>
