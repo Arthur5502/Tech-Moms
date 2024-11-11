@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdSettings, MdLogout, MdShoppingCart, MdEmail, MdFavorite, MdDashboard, MdSchool, MdHome } from 'react-icons/md';
 import { Link, useLocation } from 'react-router-dom';
-import '../../styles/Dashboard/Sidebar.css';
+import '../../styles/DashboardUsuario/SidebarUsuario.css';
 
 function Sidebar({ isExpanded }) {
   const location = useLocation();
@@ -51,7 +51,7 @@ function Sidebar({ isExpanded }) {
           <MdSettings className="react-icon"/>
           <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Configurações</span>
         </a>
-        <a href="#">
+        <a href="/">
           <MdLogout className="react-icon"/>
           <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Logout</span>
         </a>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FiMenu, FiSearch, FiBell, FiMail } from 'react-icons/fi';
-import '../../styles/Dashboard/NavbarDashboard.css';
-import Sidebar from '../../components/Dashboard/Sidebar';
+import { Link } from 'react-router-dom';
+import '../../styles/DashboardUsuario/NavbarUsuario.css';
+import Sidebar from './SidebarUsuario';
 
 function NavbarDashboard() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -31,7 +32,9 @@ function NavbarDashboard() {
           <FiMail className="icon-dash" />
           <div className="user-info-dash">
             <span>Nome Conta, <span className="user-role">Freela</span></span>
-            <div className="user-avatar-dash"></div>
+            <Link to="/userProfile">
+              <div className="user-avatar-dash"></div>
+            </Link>
           </div>
         </div>
       </div>

@@ -5,8 +5,10 @@
   padding: 10px 20px;
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
-  font-family: Arial, sans-serif;
-  position: relative; 
+  font-family: 'Inter', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
