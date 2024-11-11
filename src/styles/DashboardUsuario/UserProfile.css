@@ -1,0 +1,228 @@
+.perfil-container {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    height: 86.6vh;
+    padding-left: 4.5rem;
+    overflow: hidden;
+  }
+  
+  .perfil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .salvar-button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .perfil-content {
+    display: flex;
+    gap: 2rem;
+    flex-grow: 1;
+  }
+  
+  .resumo-container {
+    flex: 2;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(-2rem);
+  }
+  
+  .resumo-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .habilidades-section h3 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .habilidades-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .habilidade {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+  .habilidade-active {
+    background-color: #e1ccec;
+    border-color: #8e44ad;
+  }
+  
+  .resumo-profissional h3 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .editor-toolbar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .editor-toolbar button {
+    background-color: #e1ccec;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    color: #8e44ad;
+    font-size: 0.875rem;
+  }
+  
+  .editor-textarea {
+    width: 100%;
+    height: 8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .perfil-visualizacao {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transform: translateY(-2rem);
+  }
+  
+  .perfil-visualizacao h3 {
+    font-size: 1.25rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .perfil-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .perfil-nome {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .escolher-img {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .horarios-disponiveis h3 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .dias-semana {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .dia {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+  .preferencias h3 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .preferencias-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .tags-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 70%;
+    font-size: 0.875rem;
+  }
+  
+  .tags a {
+    color: #8e44ad;
+    font-size: 0.875rem;
+  }
+
+.habilidade {
+    cursor: pointer;
+  }
+  
+  .habilidade-active {
+    background-color: #e1ccec;
+    border-color: #8e44ad;
+  }
+  
+  .editor-toolbar .active {
+    background-color: #8e44ad;
+    color: white;
+  }
+  
+  .dia {
+    cursor: pointer;
+  }
+  
+  .dia-active {
+    background-color: #e1ccec;
+    border-color: #8e44ad;
+  }
+  
+  .escolher-img {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
