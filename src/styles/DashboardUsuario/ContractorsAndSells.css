@@ -1,0 +1,78 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.sells-and-contractors-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 90px;
+  padding-right: 55px;
+  gap: 50px;
+  flex-wrap: nowrap;
+  margin-top: -20px;
+}
+
+.contractors-card, .sells-card {
+  flex: 1 1 48%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contractors-card h3, .sells-card h3 {
+  margin-bottom: 20px;
+}
+
+.contractor-item, .product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contractor-info, .product-info {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+}
+
+.contractor-profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contractor-name, .product-name {
+  font-weight: bold;
+}
+
+.contractor-email, .product-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.contractor-value, .product-sales {
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}
+
+.contractor-info div, .product-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info {
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.product-info div {
+  display: flex;
+  flex-direction: column;
+}
