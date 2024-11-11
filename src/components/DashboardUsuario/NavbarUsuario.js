@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiMenu, FiSearch, FiBell, FiMail } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import '../../styles/DashboardUsuario/NavbarUsuario.css';
 import Sidebar from './SidebarUsuario';
 
@@ -31,7 +32,9 @@ function NavbarDashboard() {
           <FiMail className="icon-dash" />
           <div className="user-info-dash">
             <span>Nome Conta, <span className="user-role">Freela</span></span>
-            <div className="user-avatar-dash"></div>
+            <Link to="/userProfile">
+              <div className="user-avatar-dash"></div>
+            </Link>
           </div>
         </div>
       </div>
