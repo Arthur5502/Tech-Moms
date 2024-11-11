@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FiMenu, FiSearch, FiBell, FiMail } from 'react-icons/fi';
-import '../../styles/Dashboard/NavbarDashboard.css';
-import Sidebar from '../../components/Dashboard/Sidebar';
+import '../../styles/DashboardUsuario/NavbarUsuario.css';
+import Sidebar from './SidebarUsuario';
 
 function NavbarDashboard() {
   const [isExpanded, setIsExpanded] = useState(false);

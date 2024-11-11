@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Dashboard/ContractorsAndSells.css';
+import '../../styles/DashboardUsuario/ContractorsAndSells.css';
 
 const SellsAndContractors = () => {
     const contractors = [
