@@ -3,7 +3,7 @@ import HomeContent from '../components/Home/HomeContent';
 import '../styles/Home/Home.css';
 import CommunitySection from '../components/Home/CommunitySection';
 import Carousel from '../components/Home/Carousel';
-import Footer from '../components/Footer';
+import Footer from '../components/Home/Footer';
 import Beneficios from '../components/Home/Beneficios';
 import ApproachSection from '../components/Home/ApproachSection';
 import About from '../components/Home/About';
