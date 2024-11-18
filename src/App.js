@@ -14,6 +14,7 @@ import NavbarUsuario from './components/DashboardUsuario/NavbarUsuario';
 import NavbarBusiness from './components/DashboardEmpresa/NavbarBusiness';
 import UserProfile from './components/DashboardUsuario/UserProfile';
 import Sidebar from './components/FeedOportunidades/Sidebar';
+import PropostaProjetos from './components/FeedOportunidades/PropostaProjetos';
 
 const Main = () => {
   return (
@@ -22,7 +23,7 @@ const Main = () => {
         <Route path="/dashboardUsuario" element={<NavbarUsuario />} />
         <Route path="/userProfile" element={<NavbarUsuario />} />
         <Route path="/dashboardEmpresa" element={<NavbarBusiness />} />
-        <Route path="/oportunidades" element={<Sidebar />} />
+        <Route path="/oportunidades" element={<PropostaProjetos />} />
         <Route path="*" element={<Navbar />} />
       </Routes>
       <Routes>
