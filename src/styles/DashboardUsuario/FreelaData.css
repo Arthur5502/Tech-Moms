@@ -28,6 +28,12 @@
     margin-left: 10dvh;
 }
 
+.freela-header h1 {
+    font-size: 2rem;
+    color: #202224;
+    font-weight: bold;
+}
+
 .freela-data {
     display: flex;
     justify-content: space-between;

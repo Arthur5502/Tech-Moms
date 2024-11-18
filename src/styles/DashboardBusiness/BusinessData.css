@@ -41,6 +41,12 @@
   border-radius: 0.3125rem;
 }
 
+.business-header h1 {
+  font-size: 2rem;
+  color: #202224;
+  font-weight: bold;
+}
+
 .business-data-item {
   display: flex;
   flex-direction: column;
