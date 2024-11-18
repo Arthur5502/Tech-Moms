@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FiMenu, FiSearch, FiBell, FiMail } from 'react-icons/fi';
 import '../../styles/DashboardBusiness/NavbarBusiness.css';
-import Sidebar from '../DashboardUsuario/SidebarUsuario';
+import SidebarBusiness from '../DashboardEmpresa/SidebarBusiness';
 
 function NavbarBusiness() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,7 +12,7 @@ function NavbarBusiness() {
 
   return (
     <div className="navbar-business-container">
-      <Sidebar isExpanded={isExpanded} />
+      <SidebarBusiness isExpanded={isExpanded} />
       <div className="navbar-business">
         <div className="navbar-left-business">
           <FiMenu className="menu-icon-business" onClick={toggleSidebar} />

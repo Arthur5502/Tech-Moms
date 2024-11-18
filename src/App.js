@@ -13,6 +13,8 @@ import DashBoardEmpresa from './pages/DashBoardEmpresa';
 import NavbarUsuario from './components/DashboardUsuario/NavbarUsuario';
 import NavbarBusiness from './components/DashboardEmpresa/NavbarBusiness';
 import UserProfile from './components/DashboardUsuario/UserProfile';
+import UserFeed from './pages/UserFeed';
+import BusinessFeed from './pages/BusinessFeed';
 
 const Main = () => {
   return (
@@ -21,7 +23,9 @@ const Main = () => {
         <Route path="/dashboardUsuario" element={<NavbarUsuario />} />
         <Route path="/userProfile" element={<NavbarUsuario />} />
         <Route path="/dashboardEmpresa" element={<NavbarBusiness />} />
-        <Route path="*" element={<Navbar />} />
+        <Route path="/signup" element={<Navbar />} />
+        <Route path="/login" element={<Navbar />} />
+        <Route path="/" element={<Navbar />} />
       </Routes>
       <Routes>
         <Route path="/signup" element={<Signup />} />
@@ -33,6 +37,8 @@ const Main = () => {
         <Route path="/dashboardUsuario" element={<DashBoardUsuario />} />
         <Route path="/dashboardEmpresa" element={<DashBoardEmpresa />} />
         <Route path="/userProfile" element={<UserProfile />} />
+        <Route path="/userFeed" element={<UserFeed />} />
+        <Route path="/businessFeed" element={<BusinessFeed />} />
       </Routes>
     </>
   );

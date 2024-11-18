@@ -1,0 +1,116 @@
+.freelancer-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f5f6fa;
+  width: 100%;
+}
+
+.freelancer-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.freelancer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.freelancer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.freelancer-menu {
+  font-size: 1.5rem;
+  color: #999999;
+  cursor: pointer;
+}
+
+.freelancer-type-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.freelancer-type {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  color: #0ba02c;
+}
+
+.freelancer-type.freelancer {
+  background-color: #e7f6ea;
+}
+
+.freelancer-type.tempo-integral {
+  background-color: #e7f6ea;
+}
+
+.freelancer-salary {
+  font-size: 0.875rem;
+  color: #555555;
+}
+
+.freelancer-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.freelancer-tag {
+  font-size: 0.75rem;
+  background-color: #e8eafe;
+  color: #313d4f;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.freelancer-company-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.freelancer-icon {
+  font-size: 1.5rem;
+  color: #4285f4;
+}
+
+.freelancer-company {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.freelancer-location {
+  font-size: 0.8rem;
+  color: #777777;
+  display: flex;
+  align-items: center;
+}
+
+.freelancer-rating {
+  font-size: 0.875rem;
+  color: #f39c12;
+  text-align: right;
+}
+
+.freelancer-rating i {
+  margin-right: 0.25rem;
+}
+
+.freelancer-rate {
+  padding: 0.4rem;
+}

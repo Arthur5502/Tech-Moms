@@ -1,0 +1,143 @@
+.freelancers-list-container {
+  padding: 2rem;
+  background-color: #f5f6fa;
+  border-radius: 8px;
+}
+
+.freelancers-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.freelancers-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.freelancer-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.freelancer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.freelancer-card-icon {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: green;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.freelancer-badge {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+.freelancer-card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.freelancer-rating {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.freelancer-rating .star-icon {
+  color: #ffc107;
+  margin-right: 0.5rem;
+}
+
+.freelancer-location {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.freelancer-location .location-icon {
+  margin-right: 0.5rem;
+  color: #999;
+}
+
+.freelancer-jobs {
+  font-size: 1rem;
+  color: #6c63ff;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.freelancers-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.freelancers-pagination-button,
+.freelancers-pagination-number {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 0.2rem;
+}
+
+.freelancers-pagination-button:hover,
+.freelancers-pagination-number:hover {
+  background-color: #5848c2;
+}
+
+.freelancers-pagination-number {
+  background-color: transparent;
+  color: #333;
+}
+
+.freelancers-pagination-number.active {
+  background-color: #5848c2; 
+  color: #fff;
+}

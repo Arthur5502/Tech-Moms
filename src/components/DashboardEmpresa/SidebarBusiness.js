@@ -10,16 +10,16 @@ function SidebarBusiness({ isExpanded }) {
     <nav className={`sidebar-business ${isExpanded ? 'expanded' : ''}`}>
       <ul>
         <li className={location.pathname === '/DashboardUsuario' ? 'active' : ''}>
-          <Link to="/DashboardUsuario">
+          <Link to="/dashboardEmpresa">
             <MdDashboard className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Dashboard</span>
           </Link>
         </li>
         <li>
-          <a href=".">
+          <Link to="/businessFeed">
             <MdHome className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Feed</span>
-          </a>
+          </Link>
         </li>
         <li>
           <a href=".">

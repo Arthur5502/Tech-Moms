@@ -5,7 +5,6 @@ import SearchAndFilterBar from '../components/UserFeed/SearchAndFilterBar';
 import JobCategories from '../components/UserFeed/JobCategories';
 import JobList from '../components/UserFeed/JobList';
 import TopRatedCompanies from '../components/UserFeed/TopRatedCompanies';
-import Footer from '../components/Footer';
 import '../styles/UserFeed/UserFeed.css';
 
 const UserFeed = () => {
@@ -26,7 +25,6 @@ const UserFeed = () => {
       <div className="user-feed-bottom">
         <TopRatedCompanies />
       </div>
-      <Footer />
     </div>
   );
 };
