@@ -1,0 +1,315 @@
+.box{
+    border: 1px solid #FFFF;
+    border-radius: 8px;
+    padding: 24px;
+    background: #FFFF;
+    width: 425px;
+    height: 215px;
+    gap: 20px;
+    border-color: #E4E5E8;
+}
+#ux{
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+#tres-pontos{
+position: relative;
+left: 236px;
+color: #BABABA;
+}
+#tres-pontos1{
+    position: relative;
+    left: 258px;
+    color: #BABABA;
+}
+#tres-pontos2{
+    position: relative;
+    left: 200px;
+    color: #BABABA;
+}
+#tres-pontos4{
+    position: relative;
+    left: 223px;
+    color: #BABABA;
+}
+#tres-pontos5{
+    position: relative;
+    left: 166px;
+    color: #BABABA;
+}
+#tres-pontos6{
+    position: relative;
+    left: 155px;
+    color: #BABABA;
+}
+#tres-pontos7{
+    position: relative;
+    left: 160px;
+    color: #BABABA;
+}
+#display-seta {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    right: 70px;
+    top: 160px;
+  }
+  #seta2{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 84px;
+    background-color: #fafafa;
+    color: #8D04C6;
+    position: relative;
+    padding: 12px;
+    font-size: 24px;
+    height: 48px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #seta1 {
+    border: none;
+    background: none;
+    position: relative;
+    right: 10px;
+    top: 4px;
+    height: 48px;
+    color: #AA80F9; 
+    font-size: 24px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+.numero:focus{
+    border-radius: 50%;
+    color: #fafafa;
+    background-color: #8D04C6;
+}
+.numero {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    color: #000;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+.bordaFreelancer{
+    position: relative;
+    top: 7px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    width: 101px;
+    height: 20px;
+    border-radius: 3px;
+    gap: 30px;
+    background: #e7f6ea;
+    display: flex;
+}
+#Freelancer{
+    width: 79px;
+    height: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0BA02C;
+}
+#salario{
+position: relative;
+bottom: 2px;
+right: 2px;
+white-space: nowrap;
+width: 400px;
+height: 20px;
+font-weight: 400;
+font-size: 14px;
+color: #767F8C;
+display: block;
+}
+.borda-back{
+    width: 79px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    top: 25px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    display: flex;
+    gap: 24px;
+    background: #6675F726;
+
+}
+#back-end{
+    width: 63px;
+    height: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #313D4F;
+    white-space: nowrap;
+    
+}
+.borda-junior{
+    width: 61px;
+    height: 25px;
+    border-radius: 3px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    background: #6675F726;
+    position: relative;
+    bottom: 4px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+}
+#junior{
+    position: relative;
+    bottom: 3px;
+    width: 45px;
+    height: 12px;
+    color: #313D4F;
+    font-size: 12px;
+    font-weight: 600;
+}
+.google-card{
+width: 48px;
+height: 48px;
+border-radius: 4px;
+padding: 12px;
+gap: 10px;
+background: #EDEFF5;
+position: relative;
+top: 45px;
+display: flex;
+}
+#google-inc{
+    position: relative;
+    white-space: nowrap;
+    left: 15px;
+    bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #18191C;
+    display: flex;
+    flex-direction: column;
+}
+#localizacao{
+    position: relative;
+    top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #767F8C;
+}
+.display-flex{
+    display: flex;
+    gap: 20px;
+}
+#icone{
+    color: #767F8C;
+    position: relative;
+    top: 3px;
+    right: 2px;
+}
+
+.rating-bookmark {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #767f8c;
+  }
+
+  .rating {
+    position: relative;
+    left: 270px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+  
+  #estrela {
+    color: #ffa500; 
+  }
+  
+  #rating-text {
+    font-weight: 400;
+  }
+
+  #bookmark {
+    font-size: 18px;
+    color: #767f8c; 
+    cursor: pointer;
+  }
+  #quebra {
+    border-top: 2px solid #CBD5E0;
+    width: 1310px;
+    position: relative;
+    top: 66px;
+    right: 913px;
+    display: block;
+}
+body{
+    width: 100vw;
+    height: 100vw;
+}
+.display-flex1{
+    position: relative;
+    top: 13px;
+    display: flex;
+    gap: 20px;
+}
+
+.tempo-integral{
+    position: relative;
+    top: 7px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    gap: 25px;
+    display: flex;
+    width: 122px;
+    height: 20px;
+    border-radius: 3px;
+    background: #e7f6ea;
+}
+#integral-texto{
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0BA20C;
+}
+.meio-periodo{
+    position: relative;
+    top: 7px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    gap: 25px;
+    display: flex;
+    width: 104px;
+    height: 20px;
+    border-radius: 3px;
+    background: #e7f6ea;
+}
+#periodo-texto{
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0BA02C;
+}

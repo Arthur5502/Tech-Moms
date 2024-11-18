@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Home/Navbar';
 import Home from './pages/Home';
 import LoginForm from './components/Home/LoginForm';
@@ -10,17 +10,20 @@ import CommunitySection from './components/Home/CommunitySection';
 import About from './components/Home/About';
 import DashBoardUsuario from './pages/DashBoardUsuario';
 import DashBoardEmpresa from './pages/DashBoardEmpresa';
-import NavbarDashboard from './components/Dashboard/NavbarDashboard';
-import NavBarEmpresa from './components/DashboardEmpresa/NavbarEmpresa';
+import NavbarUsuario from './components/DashboardUsuario/NavbarUsuario';
+import NavbarBusiness from './components/DashboardEmpresa/NavbarBusiness';
+import UserProfile from './components/DashboardUsuario/UserProfile';
+import Sidebar from './components/FeedOportunidades/Sidebar';
+import PropostaProjetos from './components/FeedOportunidades/PropostaProjetos';
 
 const Main = () => {
-  const location = useLocation();
-
   return (
     <>
        <Routes>
-        <Route path="/dashboardUsuario" element={<NavbarDashboard />} />
-        <Route path="/dashboardEmpresa" element={<NavBarEmpresa />} />
+        <Route path="/dashboardUsuario" element={<NavbarUsuario />} />
+        <Route path="/userProfile" element={<NavbarUsuario />} />
+        <Route path="/dashboardEmpresa" element={<NavbarBusiness />} />
+        <Route path="/oportunidades" element={<PropostaProjetos />} />
         <Route path="*" element={<Navbar />} />
       </Routes>
       <Routes>
@@ -32,6 +35,7 @@ const Main = () => {
         <Route path="/" element={<Home />} />
         <Route path="/dashboardUsuario" element={<DashBoardUsuario />} />
         <Route path="/dashboardEmpresa" element={<DashBoardEmpresa />} />
+        <Route path="/userProfile" element={<UserProfile />} />
       </Routes>
     </>
   );

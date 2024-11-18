@@ -1,13 +1,17 @@
 import React from 'react';
-import EmpresaData from '../components/DashboardEmpresa/EmpresaData.js';
-import FreelaAndProjects from '../components/DashboardEmpresa/FreelaAndProjects';
-import '../styles/DashboardEmpresa/DashboardEmpresa.css';
+import SidebarBusiness from '../components/DashboardEmpresa/SidebarBusiness';
+import BusinessData from '../components/DashboardEmpresa/BusinessData';
+import Projects from '../components/DashboardEmpresa/Projects';
+import FreelasAndPublishedProjects from '../components/DashboardEmpresa/FreelasAndPublishedProjects';
+import '../styles/DashboardBusiness/DashboardBusiness.css';
 
 function DashBoardEmpresa() {
     return (
-            <div>
-                <EmpresaData />
-                <FreelaAndProjects />
+        <div className="dashboard-empresa">
+            <SidebarBusiness /> 
+            <BusinessData />
+            <Projects />
+            <FreelasAndPublishedProjects />
         </div>
     );
 }
