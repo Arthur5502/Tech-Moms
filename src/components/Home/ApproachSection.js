@@ -1,30 +1,25 @@
 import React, { useState } from 'react';
 import '../../styles/Home/ApproachSection.css';
+import { 
+  FaNodeJs, FaPhp, FaJava, FaPython, FaHtml5, FaCss3Alt, FaReact, FaAngular, FaDatabase, FaDocker,
+  FaAws, FaGitAlt, FaJenkins 
+} from 'react-icons/fa';
+import { SiMysql, SiDotnet, SiCplusplus, SiGo, SiMongodb, SiTypescript, SiJavascript } from 'react-icons/si';
 import UX_UI_icon from '../../assets/Home/UX_UI.png';
 import Desenvolvimento_icon from '../../assets/Home/Desenvolvimento.png';
 import Interatividade_icon from '../../assets/Home/Interitividade.png';
 import Segurança_icon from '../../assets/Home/Seguranca.png';
 import Revisao_icon from '../../assets/Home/Revisao.png';
 import Garantia_icon from '../../assets/Home/Garantia.png';
-import NodeJS_icon from '../../assets/Home/NodeJS.png';
-import PHP_icon from '../../assets/Home/PHP.png';
-import MySQL_icon from '../../assets/Home/MySQL.png';
-import Java_icon from '../../assets/Home/Java.png';
-import DotNet_icon from '../../assets/Home/NETCore.png';
-import Python_icon from '../../assets/Home/Python.png';
-import Cplusplus_icon from '../../assets/Home/RubyOnRails.png';
-import Go_icon from '../../assets/Home/Go.png';
-import MongoDB_icon from '../../assets/Home/mongoDB.png';
-import Angular_icon from '../../assets/Home/angular.png';
-import Html_icon from '../../assets/Home/HTML.png';
-import Css_icon from '../../assets/Home/CSS.png';
-import Js_icon from '../../assets/Home/Js.png';
-import Tp_icon from '../../assets/Home/typescript.png';
-import React_icon from '../../assets/Home/react.png';
 
 const Card = ({ icon, title, description }) => (
   <div className="approach-card">
-    <img src={icon} alt={title} className="card-icon" />
+    {/* Renderizando o ícone da imagem como um <img> */}
+    {typeof icon === 'string' ? (
+      <img src={icon} alt={title} className="card-icon" />
+    ) : (
+      <div className="card-icon">{icon}</div> // Renderizando o componente de ícone
+    )}
     <h3>{title}</h3>
     <p>{description}</p>
   </div>
@@ -41,46 +36,46 @@ const ApproachSection = () => {
   const cardsGroup2 = [
     { icon: Interatividade_icon, title: 'Interatividade & Comunidade', description: 'Junte-se à comunidade de mães freelancers. Compartilhe experiências, dicas e oportunidades.' },
     { icon: Segurança_icon, title: 'Segurança & Integridade', description: 'Garantimos segurança e integridade para seus projetos e dados.' },
-    
   ];
 
   const cardsGroup3 = [
     { icon: Revisao_icon, title: 'Revisão de Entregas', description: 'Garantimos a revisão de entregas para que atendam aos mais altos padrões.' },
     { icon: Garantia_icon, title: 'Garantia de Qualidade & Teste', description: 'Oferecemos serviços de Garantia de Qualidade e Testes para garantir o melhor resultado.' }
-  ]
+  ];
 
   const technologies = {
     Backend: [
-      { icon: NodeJS_icon, title: 'Node.js' },
-      { icon: PHP_icon, title: 'PHP' },
-      { icon: MySQL_icon, title: 'MySQL' },
-      { icon: Java_icon, title: 'Java' },
-      { icon: DotNet_icon, title: '.NET Core' },
-      { icon: Python_icon, title: 'Python' },
-      { icon: Cplusplus_icon, title: 'C++' },
-      { icon: Go_icon, title: 'Go' },
-      { icon: MongoDB_icon, title: 'MongoDB' }
+      { icon: <FaNodeJs size={40} color="#68A063" />, title: 'Node.js' }, // Verde para Node.js
+      { icon: <FaPhp size={40} color="#777BB3" />, title: 'PHP' }, // Azul para PHP
+      { icon: <SiMysql size={40} color="#4479A1" />, title: 'MySQL' }, // Azul escuro para MySQL
+      { icon: <FaJava size={40} color="#F8981D" />, title: 'Java' }, // Laranja para Java
+      { icon: <SiDotnet size={40} color="#512BD4" />, title: '.NET Core' }, // Roxo para .NET
+      { icon: <FaPython size={40} color="#306998" />, title: 'Python' }, // Azul para Python
+      { icon: <SiCplusplus size={40} color="#00599C" />, title: 'C++' }, // Azul escuro para C++
+      { icon: <SiGo size={40} color="#00ADD8" />, title: 'Go' }, // Azul claro para Go
+      { icon: <SiMongodb size={40} color="#4DB33D" />, title: 'MongoDB' }, // Verde para MongoDB
     ],
     Frontend: [
-        { icon: Angular_icon, title: 'Angular' },
-        { icon: Tp_icon, title: 'typescript' },
-        { icon: Html_icon, title: 'html' },
-        { icon: Css_icon, title: 'CSS' },
-        { icon: React_icon, title: 'React' },
-        { icon: Js_icon, title: 'javascript' },
+      { icon: <FaAngular size={40} color="#DD0031" />, title: 'Angular' }, // Vermelho para Angular
+      { icon: <SiTypescript size={40} color="#007ACC" />, title: 'TypeScript' }, // Azul para TypeScript
+      { icon: <FaHtml5 size={40} color="#E34F26" />, title: 'HTML' }, // Laranja para HTML
+      { icon: <FaCss3Alt size={40} color="#2965F1" />, title: 'CSS' }, // Azul para CSS
+      { icon: <FaReact size={40} color="#61DAFB" />, title: 'React' }, // Azul claro para React
+      { icon: <SiJavascript size={40} color="#F7DF1E" />, title: 'JavaScript' }, // Amarelo para JavaScript
     ],
     Dados: [
-        { icon: Go_icon, title: 'Go' },
+      { icon: <FaDatabase size={40} color="#F2C94C" />, title: 'Banco de Dados' }, // Amarelo para Banco de Dados
     ],
     QA: [
-        { icon: Go_icon, title: 'Go' },
+      { icon: <FaGitAlt size={40} color="#F1502F" />, title: 'Git' }, // Laranja para Git
     ],
     Marketing: [
-        { icon: Go_icon, title: 'Go' },
+      { icon: <FaAws size={40} color="#FF9900" />, title: 'AWS' }, // Amarelo para AWS
     ],
     DevOps: [
-        { icon: Go_icon, title: 'Go' },
-    ]
+      { icon: <FaDocker size={40} color="#2496ED" />, title: 'Docker' }, // Azul para Docker
+      { icon: <FaJenkins size={40} color="#D24939" />, title: 'Jenkins' }, // Vermelho para Jenkins
+    ],
   };
 
   return (
@@ -121,7 +116,9 @@ const ApproachSection = () => {
 
         <div className="technologies-grid">
           {technologies[activeCategory].map((tech, index) => (
-            <img key={index} src={tech.icon} alt={tech.title} />
+            <div key={index} className="tech-icon">
+              {tech.icon}
+            </div>
           ))}
         </div>
       </section>

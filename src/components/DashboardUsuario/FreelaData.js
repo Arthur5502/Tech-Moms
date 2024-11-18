@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiTrendingUp, FiTrendingDown, FiUsers, FiPackage, FiBarChart2, FiStar,  } from 'react-icons/fi';
-import '../../styles/DashboardBusiness/BusinessData.css';
+import '../../styles/DashboardUsuario/FreelaData.css';
 
 function PercentDisplay({ isIncreasing }) {
   return (

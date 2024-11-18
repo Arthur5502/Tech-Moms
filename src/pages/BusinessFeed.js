@@ -6,6 +6,7 @@ import BusinessFreelaCategories from '../components/BusinessFeed/BusinessFreelaC
 import BusinessFreelasList from '../components/BusinessFeed/BusinessFreelasList';
 import BusinessTopRatedFreelas from '../components/BusinessFeed/BusinessTopRatedFreelas';
 import '../styles/BusinessFeed/BusinessFeed.css';
+import FooterFeedBusiness from '../components/BusinessFeed/FooterFeedBusiness';
 
 const BusinessFeed = () => {
   return (
@@ -24,6 +25,9 @@ const BusinessFeed = () => {
       </div>
       <div className="business-feed-bottom">
         <BusinessTopRatedFreelas />
+      </div>
+      <div>
+        <FooterFeedBusiness />
       </div>
     </div>
   );

@@ -1,14 +1,16 @@
 import React from 'react';
 import '../../styles/UserFeed/JobList.css';
+import { FaEllipsisH, FaMapMarkerAlt, FaStar } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const jobs = Array.from({ length: 15 }, (_, index) => ({
   id: index + 1,
-  title: index % 2 === 0 ? 'UI/UX Designer' : 'Engenheiro de Software',
+  title: index % 4 === 0 ? 'UI/UX Designer' : index % 4 === 1 ? 'Engenheiro de Software' : index % 4 === 2 ? 'Desenvolvedor Front-End' : 'Desenvolvedor Back-End',
   company: 'Google Inc.',
   location: 'Recife, Brasil',
   type: index % 3 === 0 ? 'Freelancer' : 'Tempo Integral',
   salary: 'R$ 20.000 - R$ 25.000',
-  tags: ['Back-End', 'Júnior'],
+  tags: index % 2 === 0 ? ['Back-End', 'Júnior'] : ['Front-End', 'Pleno'],
   rating: '5.0',
   reviews: 378,
 }));
@@ -21,7 +23,7 @@ const JobList = () => {
           <div className="job-header">
             <h3 className="job-title">{job.title}</h3>
             <div className="job-menu">
-              <i className="fas fa-ellipsis-h"></i>
+              <FaEllipsisH />
             </div>
           </div>
           <div className="job-type-container">
@@ -36,14 +38,14 @@ const JobList = () => {
             ))}
           </div>
           <div className="job-company-info">
-            <i className="fab fa-google job-icon"></i>
+            <FcGoogle className="job-icon" />
             <span className="job-company">{job.company}</span>
             <span className="job-location">
-              <i className="fas fa-map-marker-alt"></i> {job.location}
+              <FaMapMarkerAlt /> {job.location}
             </span>
           </div>
           <div className="job-rating">
-            <i className="fas fa-star"></i> {job.rating} <span>({job.reviews})</span>
+            <FaStar /> {job.rating} <span>({job.reviews})</span>
           </div>
         </div>
       ))}

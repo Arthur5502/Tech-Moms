@@ -3,6 +3,7 @@ import FreelaData from '../components/DashboardUsuario/FreelaData';
 import Contractors from '../components/DashboardUsuario/ContractorsAndSells';
 import ProjectTable from '../components/DashboardUsuario/ProjectTable';
 import Transactions from '../components/DashboardUsuario/Transactions';
+import FooterDashboardusuario from '../components/DashboardUsuario/FooterDashboardUsuario';
 import '../styles/DashboardUsuario/DashBoardUsuario.css';
 
 
@@ -13,6 +14,7 @@ function DashBoardUsuario() {
             <ProjectTable />
             <Contractors />
             <Transactions />
+            <FooterDashboardusuario />
         </div>
     );
 }

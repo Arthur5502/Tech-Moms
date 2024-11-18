@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px; 
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .projects-header h2 {
@@ -27,7 +27,7 @@
   color: #007bff;
   cursor: pointer;
   margin-left: 10px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .projects-month-selector {

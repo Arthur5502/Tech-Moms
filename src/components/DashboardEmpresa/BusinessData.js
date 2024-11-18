@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiTrendingUp, FiTrendingDown, FiUsers, FiPackage, FiBarChart2, FiStar,  } from 'react-icons/fi';
-import '../../styles/DashboardUsuario/FreelaData.css';
+import '../../styles/DashboardBusiness/BusinessData.css';
 
 function PercentDisplay({ isIncreasing }) {
   return (
@@ -17,7 +17,7 @@ function PercentDisplay({ isIncreasing }) {
 function BusinessData() {
   return (
     <section className='container-business'>
-      <div className='freela-header'>
+      <div className='business-header'>
         <h1>Dashboard</h1>
       </div>
       <div className='business-filho'>

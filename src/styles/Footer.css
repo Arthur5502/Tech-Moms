@@ -4,7 +4,7 @@
     padding: 20px;
     background-color: white;
     color: white;
-    overflow-x: auto;
+    overflow-x: hidden;
     align-self: flex-end;
   }
   

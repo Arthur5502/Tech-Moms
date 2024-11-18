@@ -1,18 +1,34 @@
 import React, { useState } from 'react';
-import { FaMicrosoft, FaApple, FaGoogle, FaAmazon, FaFacebook, FaTwitter, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
+import { FaArrowLeft, FaArrowRight, FaAmazon, FaTwitter, FaApple, FaFacebook } from 'react-icons/fa';
 import '../../styles/UserFeed/TopRatedCompanies.css';
 
 const TopRatedCompanies = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 5;
 
+  const MicrosoftIcon = () => (
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: '2px',
+      width: '50px',
+      height: '50px',
+    }}>
+      <div style={{ backgroundColor: '#F25022', width: '100%', height: '100%' }}></div>
+      <div style={{ backgroundColor: '#7FBA00', width: '100%', height: '100%' }}></div>
+      <div style={{ backgroundColor: '#00A4EF', width: '100%', height: '100%' }}></div>
+      <div style={{ backgroundColor: '#FFB900', width: '100%', height: '100%' }}></div>
+    </div>
+  );
+
   const companies = [
-    { name: 'Microsoft', rating: '5.0', location: 'Recife, Brasil', jobs: 3, icon: <FaMicrosoft /> },
-    { name: 'Apple', rating: '5.0', location: 'Recife, Brasil', jobs: 3, icon: <FaApple /> },
-    { name: 'Google Inc.', rating: '5.0', location: 'Recife, Brasil', jobs: 3, icon: <FaGoogle /> },
-    { name: 'Amazon', rating: '4.8', location: 'Recife, Brasil', jobs: 5, icon: <FaAmazon /> },
-    { name: 'Facebook', rating: '4.9', location: 'Recife, Brasil', jobs: 4, icon: <FaFacebook /> },
-    { name: 'Twitter', rating: '4.7', location: 'Recife, Brasil', jobs: 2, icon: <FaTwitter /> },
+    { name: 'Microsoft', rating: '5.0', location: 'Recife, Brasil', jobs: 3, icon: <MicrosoftIcon size={50} /> },
+    { name: 'Apple', rating: '5.0', location: 'Recife, Brasil', jobs: 3, icon: <FaApple size={50} color="#000000" /> },
+    { name: 'Google Inc.', rating: '5.0', location: 'Recife, Brasil', jobs: 3, icon: <FcGoogle size={50} /> },
+    { name: 'Amazon', rating: '4.8', location: 'Recife, Brasil', jobs: 5, icon: <FaAmazon size={50} color="#FF9900" /> },
+    { name: 'Facebook', rating: '4.9', location: 'Recife, Brasil', jobs: 4, icon: <FaFacebook size={50} /> },
+    { name: 'Twitter', rating: '4.7', location: 'Recife, Brasil', jobs: 2, icon: <FaTwitter size={50} color="#1DA1F2" /> },
   ];
 
   const handlePageChange = (page) => {
@@ -37,7 +53,7 @@ const TopRatedCompanies = () => {
               <p>{company.location}</p>
             </div>
             <div className="top-rated-companies-jobs">
-              <p>Vagas Abertas ({company.jobs})</p>
+              <button className='companies-button-freela'>Vagas Abertas ({company.jobs})</button>
             </div>
           </div>
         ))}

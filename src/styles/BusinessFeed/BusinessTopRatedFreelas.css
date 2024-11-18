@@ -1,7 +1,10 @@
 .freelancers-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
   padding: 2rem;
   background-color: #f5f6fa;
-  border-radius: 8px;
+  border-radius: 8px  
 }
 
 .freelancers-title {
@@ -140,4 +143,13 @@
 .freelancers-pagination-number.active {
   background-color: #5848c2; 
   color: #fff;
+}
+
+.freelancers-button-business{
+  background: linear-gradient(90deg, #6675F7, #57007B);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }

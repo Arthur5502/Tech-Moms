@@ -7,12 +7,12 @@ const BusinessTopRatedFreelas = () => {
   const totalPages = 5;
 
   const freelancers = [
-    { name: 'Mãe Freelancer', rating: '5.0', location: 'Recife, Brasil' },
-    { name: 'Freelancer Mom', rating: '5.0', location: 'Recife, Brasil' },
-    { name: 'Mom Freela', rating: '5.0', location: 'Recife, Brasil' },
-    { name: 'Mãe Freela', rating: '4.8', location: 'Recife, Brasil' },
-    { name: 'Mamãe Freelancer', rating: '4.9', location: 'Recife, Brasil' },
-    { name: 'Freela Mom', rating: '4.7', location: 'Recife, Brasil' },
+    { name: 'Roberta', rating: '5.0', location: 'Recife, Brasil' },
+    { name: 'Fernanda', rating: '5.0', location: 'Natal, Brasil' },
+    { name: 'Júlia', rating: '5.0', location: 'Minas Gerais, Brasil' },
+    { name: 'laura', rating: '4.8', location: 'Amazonas, Brasil' },
+    { name: 'Brunna', rating: '4.9', location: 'Rio de Janeiro, Brasil' },
+    { name: 'Larissa', rating: '4.7', location: 'Maceió, Brasil' },
   ];
 
   const handlePageChange = (page) => {
@@ -41,7 +41,7 @@ const BusinessTopRatedFreelas = () => {
               <p>{freelancer.location}</p>
             </div>
             <div className="freelancer-jobs">
-              <p>Contratar</p>
+              <button className='freelancers-button-business'>Contratar</button>
             </div>
           </div>
         ))}
