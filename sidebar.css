@@ -1,0 +1,96 @@
+/* Estilos base do sidebar */
+.sidebar {
+  width: 16rem; /* 256px */
+  padding: 1rem;
+  background-color: white;
+}
+
+/* Estilos do cabeçalho */
+.sidebar-header {
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.welcome-subtitle {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.post-button {
+  width: 100%;
+  background-color: #7c3aed; /* cor roxa do Tailwind purple-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.post-button:hover {
+  background-color: #6d28d9; /* cor roxa do Tailwind purple-700 */
+}
+
+/* Estilos das categorias */
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.category-card {
+  padding: 0.75rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.bg-primary {
+  background-color: #7c3aed; /* cor roxa do Tailwind purple-600 */
+}
+
+.bg-secondary {
+  background-color: #f3e8ff; /* cor roxa do Tailwind purple-100 */
+}
+
+.category-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.category-info {
+  margin-left: 0.75rem;
+}
+
+.category-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.category-jobs {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
