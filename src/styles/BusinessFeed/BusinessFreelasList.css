@@ -81,8 +81,13 @@
 .freelancer-company-info {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.2rem;
   margin: 1rem 0;
+}
+
+.freelancer-informacoes {
+  display: flex;
+  flex-direction: column;
 }
 
 .freelancer-icon {
@@ -103,8 +108,10 @@
   align-items: center;
 }
 
-.freelancer-rating {
-  font-size: 0.875rem;
+.freelancer-rating-list {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
   color: #f39c12;
   text-align: right;
 }

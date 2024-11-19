@@ -11,8 +11,11 @@ function BusinessSearchAndFilter() {
       />
       <select className="business-filter-select">
         <option>Tipo de Emprego</option>
-        <option>Freelancer</option>
-        <option>Tempo Integral</option>
+        <option>Designer</option>
+        <option>Desenvolvedora Front-End</option>
+        <option>Desenvolvedora Back-End</option>
+        <option>Marketing Digital</option>
+        <option>Edição</option>
       </select>
       <select className="business-filter-select">
         <option>Salário</option>

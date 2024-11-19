@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdSettings, MdLogout, MdShoppingCart, MdEmail, MdFavorite, MdDashboard, MdSchool, MdHome } from 'react-icons/md';
+import { MdSettings, MdLogout, MdEmail, MdDashboard, MdSchool, MdHome } from 'react-icons/md';
 import { Link, useLocation } from 'react-router-dom';
 import '../../styles/DashboardUsuario/SidebarUsuario.css';
 
@@ -22,32 +22,20 @@ function Sidebar({ isExpanded }) {
           </a>
         </li>
         <li>
-          <a href="#">
-            <MdFavorite className="react-icon"/>
-            <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Favoritos</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href=".">
             <MdEmail className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Chats</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <MdShoppingCart className="react-icon"/>
-            <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Pedidos</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href=".">
             <MdSchool className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Cursos</span>
           </a>
         </li>
       </ul>
       <div className="bottom-links">
-        <a href="#">
+        <a href=".">
           <MdSettings className="react-icon"/>
           <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Configurações</span>
         </a>

@@ -8,15 +8,16 @@ import './styles/Global.css';
 import Carousel from './components/Home/Carousel';
 import CommunitySection from './components/Home/CommunitySection';
 import About from './components/Home/About';
-import DashBoardUsuario from './pages/DashBoardUsuario';
-import DashBoardEmpresa from './pages/DashBoardEmpresa';
+import DashboardUsuario from './pages/DashboardUsuario';
+import DashboardEmpresa from './pages/DashboardEmpresa';
 import NavbarUsuario from './components/DashboardUsuario/NavbarUsuario';
 import NavbarBusiness from './components/DashboardEmpresa/NavbarBusiness';
 import UserProfile from './components/DashboardUsuario/UserProfile';
+import ProjectsEmpresa from './pages/ProjectsEmpresa';
 import UserFeed from './pages/UserFeed';
 import BusinessFeed from './pages/BusinessFeed';
 
-const Main = () => {
+function Main() {
   return (
     <>
        <Routes>
@@ -34,11 +35,12 @@ const Main = () => {
         <Route path="/servicos" element={<Carousel />} />
         <Route path="/comunidade" element={<CommunitySection />} />
         <Route path="/" element={<Home />} />
-        <Route path="/dashboardUsuario" element={<DashBoardUsuario />} />
-        <Route path="/dashboardEmpresa" element={<DashBoardEmpresa />} />
+        <Route path="/dashboardUsuario" element={<DashboardUsuario />} />
+        <Route path="/dashboardEmpresa" element={<DashboardEmpresa />} />
         <Route path="/userProfile" element={<UserProfile />} />
         <Route path="/userFeed" element={<UserFeed />} />
         <Route path="/businessFeed" element={<BusinessFeed />} />
+        <Route path="/postedProjects" element={<ProjectsEmpresa />} />
       </Routes>
     </>
   );

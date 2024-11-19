@@ -10,9 +10,9 @@ const Projects = () => {
   ];
 
   const projects = [
-    { name: "Nome Conta", project: "Landing Page", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$342,95", status: "Concluido" },
-    { name: "Nome Conta", project: "Landing Page", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$100,95", status: "Cancelado" },
-    { name: "Nome Conta", project: "Landing Page", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$34,295", status: "Andamento" },
+    { name: "Roberta", project: "Site para Manicure", date: "23/10/2022 - 14:33", tech: "Front-End", revenue: "R$382,95", status: "Concluido" },
+    { name: "Rafaela", project: "Landing Page", date: "08/04/2024 - 08:42", tech: "FullStack", revenue: "R$405,80", status: "Cancelado" },
+    { name: "Luana", project: "API", date: "15/07/2023 - 17:25", tech: "Back-End", revenue: "R$340,50", status: "Andamento" },
   ];
 
   return (
@@ -33,11 +33,11 @@ const Projects = () => {
       </div>
       
       <div className="projects-table-headers">
-        <div>CONTRATANTE</div>
+        <div>FREELANCER</div>
         <div>PROJETO</div>
         <div>DATA - HORA</div>
         <div>TECNOLOGIA</div>
-        <div>RENDA</div>
+        <div>CUSTO</div>
         <div>STATUS</div>
       </div>
 

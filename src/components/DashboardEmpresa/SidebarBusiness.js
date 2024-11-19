@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdSettings, MdLogout, MdShoppingCart, MdEmail, MdFavorite, MdDashboard, MdSchool, MdHome } from 'react-icons/md';
+import { MdSettings, MdLogout, MdShoppingCart, MdEmail, MdDashboard, MdHome } from 'react-icons/md';
 import { Link, useLocation } from 'react-router-dom';
 import '../../styles/DashboardBusiness/SidebarBusiness.css';
 
@@ -23,26 +23,14 @@ function SidebarBusiness({ isExpanded }) {
         </li>
         <li>
           <a href=".">
-            <MdFavorite className="react-icon-business"/>
-            <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Favoritos</span>
-          </a>
-        </li>
-        <li>
-          <a href=".">
             <MdEmail className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Chats</span>
           </a>
         </li>
         <li>
-          <a href=".">
+          <a href="/postedProjects">
             <MdShoppingCart className="react-icon-business"/>
-            <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Pedidos</span>
-          </a>
-        </li>
-        <li>
-          <a href=".">
-            <MdSchool className="react-icon-business"/>
-            <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Cursos</span>
+            <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Projetos</span>
           </a>
         </li>
       </ul>

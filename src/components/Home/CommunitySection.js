@@ -3,33 +3,33 @@ import '../../styles/Home/CommunitySection.css';
 
 const testimonials = [
   {
-    name: 'Usuário Nome',
+    name: 'Roberta',
     role: 'Desenvolvimento',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
     rating: 5,
   },
   {
-    name: 'Usuário Nome',
+    name: 'Júlia',
     role: 'Designer',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
     rating: 5,
   },
   {
-    name: 'Usuário Nome',
+    name: 'Fernanda',
     role: 'Software Engineer',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
     rating: 5,
   },
   {
-    name: 'Usuário Nome',
-    role: 'Empresa',
+    name: 'Brunna',
+    role: 'Representante da Google',
     feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
     rating: 5,
   },
   {
-    name: 'Usuário Nome',
-    role: 'Contratante',
-    feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
+    name: 'Marina',
+    role: 'Representante da Amazon',
+    feedback: 'Contratei uma freelancer para um projeto de uma landing page, fiquei muito satisfeita com o desenvolvimento dessa pessoa no projeto.',
     rating: 5,
   },
 ];

@@ -23,7 +23,7 @@ function BusinessData() {
       <div className='business-filho'>
         <div className='business-data'>
           <div className='business-data-item'>
-            <p>Visualizações</p>
+            <h3>Visualizações</h3>
             <h2>40,689</h2>
             <div className="percent-display-business">
               <PercentDisplay isIncreasing={true} />
@@ -38,7 +38,7 @@ function BusinessData() {
 
         <div className='business-data'>
           <div className='business-data-item'>
-            <p>Projetos</p>
+            <h3>Projetos</h3>
             <h2>29</h2>
             <div className="percent-display-business">
               <PercentDisplay isIncreasing={true} />
@@ -53,12 +53,12 @@ function BusinessData() {
 
         <div className='business-data'>
           <div className='business-data-item'>
-            <p>Renda</p>
+            <h3>Gastos</h3>
             <h2>$890,00</h2>
             <div className="percent-display-business">
               <PercentDisplay isIncreasing={false} />
               <span className="valueDown">4.3%</span>
-              <span className="text-value">mensal</span>
+              <span className="text-value-empresa">mensal</span>
             </div>
           </div>
           <div className='business-data-img'>
@@ -68,8 +68,8 @@ function BusinessData() {
 
         <div className='business-data'>
           <div className='business-data-item'>
-            <p>Avaliações</p>
-            <h2>4.9 (17)</h2>
+            <h3>Avaliações</h3>
+            <h2>4.9(17)</h2>
             <div className="percent-display-business">
               <PercentDisplay isIncreasing={true} />
               <span className="valueUp">1.8%</span>

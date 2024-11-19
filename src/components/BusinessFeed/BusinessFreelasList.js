@@ -3,14 +3,22 @@ import '../../styles/BusinessFeed/BusinessFreelasList.css';
 
 const freelancers = Array.from({ length: 15 }, (_, index) => ({
   id: index + 1,
-  title: index % 4 === 0 ? 'UI/UX Designer' : index % 4 === 1 ? 'Engenheiro de Software' : index % 4 === 2 ? 'Desenvolvedor Front-End' : 'Desenvolvedor Back-End',
-  name: index % 4 === 0 ? 'Fernanda' : index % 4 === 1 ? 'Roberta' : index % 4 === 2 ? 'Júlia' : 'brunna',
-  location: index % 4 === 0 ? 'Natal, Brasil' : index % 4 === 1 ? 'Recife, Brasil' : index % 4 === 2 ? 'Minas Gerais, Brasil' : 'Rio de Janeiro, Brasil',
+  title: index % 6 === 0 ? 'UI/UX Designer' : index % 6 === 1 ? 'Engenheiro de Software' 
+   : index % 6 === 2 ? 'Desenvolvedor Front-End' : index % 6 === 3 ? 'Desenvolvedor Back-End'
+   : index % 6 === 4 ? 'Marketing Digital' : 'Edição',
+  name: index % 6 === 0 ? 'Fernanda' : index % 6 === 1 ? 'Roberta'
+   : index % 6 === 2 ? 'Júlia' : index % 6 === 3 ? 'brunna'
+   : index % 6 === 4 ? 'Maria' : 'Luana',
+  location: index % 5 === 0 ? 'Natal, Brasil' : index % 5 === 1 ? 'Recife, Brasil'
+   : index % 5 === 2 ? 'Minas Gerais, Brasil' : index % 5 === 3 ? 'Rio de Janeiro, Brasil' 
+   : 'São Paulo, Brasil',
   type: index % 3 === 0 ? 'Freelancer' : 'Freelancer',
-  rate: index % 2 === 0 ? 'R$ 100/hora' : 'R$ 150/hora',
-  tags: ['Back-End', 'Júnior'],
-  rating: '5.0',
-  reviews: 8,
+  rate: index % 4 === 0 ? 'R$ 100/hora' : index % 4 === 1 ? 'R$ 150/hora' : index % 4 === 2 ? 'R$ 80/hora' : 'R$ 120/hora',
+  tags: index % 6 === 0 ? ['Designer', 'Pleno'] : index % 6 === 1 ? ['Engenheiro de Software', 'Sênior']
+   : index % 6 === 2 ? ['Front-End', 'Pleno'] : index % 6 === 3 ? ['Back-End', 'Júnior']
+   : index % 6 === 4 ? ['Marketing Digital', 'Júnior'] : ['Edição', 'Pleno'],
+  rating: index % 2 === 0 ? '5.0' : '4.8',
+  reviews: index % 4 === 0 ? 8 : index % 4 === 1 ? 12 : index % 4 === 2 ? 5 : 6,
 }));
 
 const BusinessFreelasList = () => {
@@ -35,15 +43,22 @@ const BusinessFreelasList = () => {
               <span key={index} className="freelancer-tag">{tag}</span>
             ))}
           </div>
-          <div className="freelancer-info">
-            <i className="fas fa-user freelancer-icon"></i>
-            <span className="freelancer-name">{freelancer.name}</span>
-            <span className="freelancer-location">
-              <i className="fas fa-map-marker-alt"></i> {freelancer.location}
-            </span>
-          </div>
-          <div className="freelancer-rating">
-            <i className="fas fa-star"></i> {freelancer.rating} <span>({freelancer.reviews})</span>
+          <div className="freelancer-company-info">
+            <div className="freelancer-card-icon">
+              <div className="profile-icon">
+                <span className="online-indicator"></span>
+              </div>
+            </div>
+            <div className="freelancer-informacoes">
+              <i className="fas fa-user freelancer-icon"></i>
+              <span className="freelancer-name">{freelancer.name}</span>
+              <span className="freelancer-location">
+                <i className="fas fa-map-marker-alt"></i> {freelancer.location}
+              </span>
+              <div className="freelancer-rating-list">
+                <i className="fas fa-star"></i> {freelancer.rating} <span>({freelancer.reviews})</span>
+              </div>
+            </div>
           </div>
         </div>
       ))}
