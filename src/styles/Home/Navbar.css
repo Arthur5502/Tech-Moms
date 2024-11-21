@@ -20,16 +20,13 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  width: 92px;
+  width: auto;
   height: 35px;
-  flex-shrink: 0;
   color: #000;
   text-align: center;
   font-family: 'Pacifico';
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .navbar-menu {
@@ -38,11 +35,13 @@
   margin: 0;
   justify-content: center; 
   flex-grow: 1;
+  font-family: 'Inter';
 }
 
 .navbar-menu li {
   margin: 0 1rem;
-  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-family: 'Inter';
 }
 
 .navbar-cadastrar {
@@ -55,8 +54,9 @@
 
 .navbar-menu a {
   text-decoration: none;
-    color: #333; 
-    transition: color 0.3s;
+  color: #333; 
+  transition: color 0.3s;
+  font-family: 'Inter';
 }
 
 .navbar-menu a:hover {
@@ -71,6 +71,7 @@
   padding: 10px 20px; 
   cursor: pointer; 
   transition: background-color 0.3s;
+  font-family: 'Inter';
 }
 
 .navbar-cadastro {
@@ -81,12 +82,23 @@
   padding: 10px 20px; 
   cursor: pointer; 
   transition: background-color 0.3s;
+  font-family: 'Inter';
 }
 
 .navbar-login:hover {
   background-color: #ee0979;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Responsividade para 900px */
+@media screen and (max-width: 900px) {
+  .navbar-menu {
+    display: none; /* Esconde o menu em telas menores */
+  }
+}
+
+/* Responsividade para 600px */
+@media screen and (max-width: 600px) {
+  .navbar-menu {
+    display: none; /* Esconde o menu em telas menores */
+  }
 }

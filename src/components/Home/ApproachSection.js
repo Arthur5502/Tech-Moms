@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../styles/Home/ApproachSection.css';
 import { 
   FaNodeJs, FaPhp, FaJava, FaPython, FaHtml5, FaCss3Alt, FaReact, FaAngular, FaDatabase, FaDocker,
-  FaAws, FaGitAlt, FaJenkins 
+  FaAws, FaGitAlt, FaJenkins
 } from 'react-icons/fa';
 import { SiMysql, SiDotnet, SiCplusplus, SiGo, SiMongodb, SiTypescript, SiJavascript } from 'react-icons/si';
 import UX_UI_icon from '../../assets/Home/UX_UI.png';
@@ -63,7 +63,7 @@ const ApproachSection = () => {
       { icon: <SiJavascript size={40} color="#F7DF1E" />, title: 'JavaScript' }, 
     ],
     Dados: [
-      { icon: <FaDatabase size={40} color="#F2C94C" />, title: 'Banco de Dados' }, 
+      { icon: <FaDatabase size={40} color="#F2C94C" />, title: 'Banco de Dados' },
     ],
     QA: [
       { icon: <FaGitAlt size={40} color="#F1502F" />, title: 'Git' }, 
