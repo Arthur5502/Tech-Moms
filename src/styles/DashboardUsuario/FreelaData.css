@@ -93,6 +93,7 @@
     display: flex;
     flex-direction: column;
     height: 15dvh;
+    padding-right: 1rem;
   }
 
   .data-icon {

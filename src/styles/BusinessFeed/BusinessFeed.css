@@ -33,4 +33,7 @@
     font-family: 'Inter';
     padding-left: 70px;
   }
-  
+
+.business-feed-page-container {
+  overflow-x: hidden;
+}

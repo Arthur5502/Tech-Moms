@@ -3,12 +3,13 @@ import '../../styles/DashboardUsuario/Transactions.css';
 
 const Transactions = () => {
   const transactions = [
-    { project: "Pagamento de Nome Conta", date: "12/09/2024 - 12:53", price: "$2300", status: "Concluido" },
-    { project: "Pagamento de Nome Conta", date: "12/09/2024 - 12:53", price: "$670", status: "Concluido" },
-    { project: "Pagamento de Nome Conta", date: "12/09/2024 - 12:53", price: "$234", status: "Cancelado" },
-    { project: "Pagamento de Nome Conta", date: "12/09/2024 - 12:53", price: "$5000", status: "Andamento" },
-    { project: "Pagamento de Nome Conta", date: "12/09/2024 - 12:53", price: "$2300", status: "Andamento" },
-    { project: "Pagamento de Nome Conta", date: "12/09/2024 - 12:53", price: "$280", status: "Concluido" },
+    { project: "Aurora Nexus", date: "11/07/2024 - 09:15", price: "$3000", status: "Concluido" },
+    { project: "EcoVita", date: "05/08/2024 - 14:30", price: "$750", status: "Concluido" },
+    { project: "InspiraLab", date: "22/06/2024 - 10:20", price: "$200", status: "Cancelado" },
+    { project: "Stellar Path", date: "19/07/2024 - 16:45", price: "$4500", status: "Andamento" },
+    { project: "Novo Horizonte", date: "25/08/2024 - 08:00", price: "$1800", status: "Andamento" },
+    { project: "CodeCraft", date: "03/09/2024 - 13:10", price: "$320", status: "Concluido" },
+
   ];
 
   return (

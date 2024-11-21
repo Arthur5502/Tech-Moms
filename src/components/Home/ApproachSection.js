@@ -14,11 +14,10 @@ import Garantia_icon from '../../assets/Home/Garantia.png';
 
 const Card = ({ icon, title, description }) => (
   <div className="approach-card">
-    {/* Renderizando o ícone da imagem como um <img> */}
     {typeof icon === 'string' ? (
       <img src={icon} alt={title} className="card-icon" />
     ) : (
-      <div className="card-icon">{icon}</div> // Renderizando o componente de ícone
+      <div className="card-icon">{icon}</div>
     )}
     <h3>{title}</h3>
     <p>{description}</p>
@@ -45,36 +44,36 @@ const ApproachSection = () => {
 
   const technologies = {
     Backend: [
-      { icon: <FaNodeJs size={40} color="#68A063" />, title: 'Node.js' }, // Verde para Node.js
-      { icon: <FaPhp size={40} color="#777BB3" />, title: 'PHP' }, // Azul para PHP
-      { icon: <SiMysql size={40} color="#4479A1" />, title: 'MySQL' }, // Azul escuro para MySQL
-      { icon: <FaJava size={40} color="#F8981D" />, title: 'Java' }, // Laranja para Java
-      { icon: <SiDotnet size={40} color="#512BD4" />, title: '.NET Core' }, // Roxo para .NET
-      { icon: <FaPython size={40} color="#306998" />, title: 'Python' }, // Azul para Python
-      { icon: <SiCplusplus size={40} color="#00599C" />, title: 'C++' }, // Azul escuro para C++
-      { icon: <SiGo size={40} color="#00ADD8" />, title: 'Go' }, // Azul claro para Go
-      { icon: <SiMongodb size={40} color="#4DB33D" />, title: 'MongoDB' }, // Verde para MongoDB
+      { icon: <FaNodeJs size={40} color="#68A063" />, title: 'Node.js' }, 
+      { icon: <FaPhp size={40} color="#777BB3" />, title: 'PHP' }, 
+      { icon: <SiMysql size={40} color="#4479A1" />, title: 'MySQL' }, 
+      { icon: <FaJava size={40} color="#F8981D" />, title: 'Java' }, 
+      { icon: <SiDotnet size={40} color="#512BD4" />, title: '.NET Core' }, 
+      { icon: <FaPython size={40} color="#306998" />, title: 'Python' }, 
+      { icon: <SiCplusplus size={40} color="#00599C" />, title: 'C++' }, 
+      { icon: <SiGo size={40} color="#00ADD8" />, title: 'Go' }, 
+      { icon: <SiMongodb size={40} color="#4DB33D" />, title: 'MongoDB' },
     ],
     Frontend: [
-      { icon: <FaAngular size={40} color="#DD0031" />, title: 'Angular' }, // Vermelho para Angular
-      { icon: <SiTypescript size={40} color="#007ACC" />, title: 'TypeScript' }, // Azul para TypeScript
-      { icon: <FaHtml5 size={40} color="#E34F26" />, title: 'HTML' }, // Laranja para HTML
-      { icon: <FaCss3Alt size={40} color="#2965F1" />, title: 'CSS' }, // Azul para CSS
-      { icon: <FaReact size={40} color="#61DAFB" />, title: 'React' }, // Azul claro para React
-      { icon: <SiJavascript size={40} color="#F7DF1E" />, title: 'JavaScript' }, // Amarelo para JavaScript
+      { icon: <FaAngular size={40} color="#DD0031" />, title: 'Angular' }, 
+      { icon: <SiTypescript size={40} color="#007ACC" />, title: 'TypeScript' }, 
+      { icon: <FaHtml5 size={40} color="#E34F26" />, title: 'HTML' }, 
+      { icon: <FaCss3Alt size={40} color="#2965F1" />, title: 'CSS' }, 
+      { icon: <FaReact size={40} color="#61DAFB" />, title: 'React' }, 
+      { icon: <SiJavascript size={40} color="#F7DF1E" />, title: 'JavaScript' }, 
     ],
     Dados: [
-      { icon: <FaDatabase size={40} color="#F2C94C" />, title: 'Banco de Dados' }, // Amarelo para Banco de Dados
+      { icon: <FaDatabase size={40} color="#F2C94C" />, title: 'Banco de Dados' }, 
     ],
     QA: [
-      { icon: <FaGitAlt size={40} color="#F1502F" />, title: 'Git' }, // Laranja para Git
+      { icon: <FaGitAlt size={40} color="#F1502F" />, title: 'Git' }, 
     ],
     Marketing: [
-      { icon: <FaAws size={40} color="#FF9900" />, title: 'AWS' }, // Amarelo para AWS
+      { icon: <FaAws size={40} color="#FF9900" />, title: 'AWS' }, 
     ],
     DevOps: [
-      { icon: <FaDocker size={40} color="#2496ED" />, title: 'Docker' }, // Azul para Docker
-      { icon: <FaJenkins size={40} color="#D24939" />, title: 'Jenkins' }, // Vermelho para Jenkins
+      { icon: <FaDocker size={40} color="#2496ED" />, title: 'Docker' }, 
+      { icon: <FaJenkins size={40} color="#D24939" />, title: 'Jenkins' }, 
     ],
   };
 

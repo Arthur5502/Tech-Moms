@@ -3,12 +3,12 @@ import '../../styles/Home/Timeline.css';
 
 const Timeline = () => {
   const steps = [
-    { id: 1, title: "Matching do Projeto", text: "Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo" },
-    { id: 2, title: "Comunicação Cliente", text: "Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo" },
-    { id: 3, title: "Desenvolvimento", text: "Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo" },
-    { id: 4, title: "Revisão da Entrega", text: "Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo" },
-    { id: 5, title: "Entrega do Projeto", text: "Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo" },
-    { id: 6, title: "Feedback e Avaliação", text: "Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo" },
+    { id: 1, title: "Matching do Projeto", text: "A freelancer e a empresa procuram a melhor oportunidade de projeto." },
+    { id: 2, title: "Comunicação Cliente", text: "A freelancer se comunica com a empresa para entender os requisitos." },
+    { id: 3, title: "Desenvolvimento", text: "É iniciado o desenvolvimento do projeto." },
+    { id: 4, title: "Revisão da Entrega", text: "Tanto a freelancer quanto a empresa revisam a entrega, verificando se todos os requisitos foram atendidos." },
+    { id: 5, title: "Entrega do Projeto", text: "Com tudo certo, a freelancer entrega com sucesso o projeto." },
+    { id: 6, title: "Feedback e Avaliação", text: "Tanto a freelancer quanto a empresa se avaliam." },
   ];
 
   return (
@@ -32,15 +32,12 @@ const Timeline = () => {
           </div>
         </div>
         <div className="timeline-box">
-        {steps.map((step, index) => (
-          <div
-            key={step.id} 
-            className={`timeline-step ${index % 2 === 0 ? 'top' : 'bottom'}`}
-          >
-            <h3 className="step-title">#{step.id} {step.title}</h3>
-            <p className="step-text">{step.text}</p>
-          </div>
-        ))}
+          {steps.map((step, index) => (
+            <div key={step.id} className={`timeline-step ${index % 2 === 0 ? 'top' : 'bottom'} id${step.id}`}>
+              <h3 className="step-title">#{step.id} {step.title}</h3>
+              <p className="step-text">{step.text}</p>
+            </div>
+          ))}
         </div>
         <div className="timeline-trophy">🏆</div>
       </div>

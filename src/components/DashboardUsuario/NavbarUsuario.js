@@ -31,7 +31,7 @@ function NavbarDashboard() {
           <FiBell className="icon-dash" />
           <FiMail className="icon-dash" />
           <div className="user-info-dash">
-            <span>Nome Conta, <span className="user-role">Freela</span></span>
+            <span className="user-role">Maria Eduarda</span>
             <Link to="/userProfile">
               <div className="user-avatar-dash"></div>
             </Link>

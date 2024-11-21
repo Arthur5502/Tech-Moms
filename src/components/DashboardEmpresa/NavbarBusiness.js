@@ -30,7 +30,7 @@ function NavbarBusiness() {
           <FiBell className="icon-business" />
           <FiMail className="icon-business" />
           <div className="user-info-business">
-            <span>Nome Conta, <span className="user-role-business">Empresa</span></span>
+            <span className="user-role-business">Accenture</span>
             <div className="user-avatar-business"></div>
           </div>
         </div>

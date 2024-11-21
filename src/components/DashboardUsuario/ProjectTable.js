@@ -10,9 +10,9 @@ const ProjectTable = () => {
   ];
 
   const projects = [
-    { name: "Nome Conta", project: "Landing Page", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$342,95", status: "Concluido" },
-    { name: "Nome Conta", project: "Landing Page", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$100,95", status: "Cancelado" },
-    { name: "Nome Conta", project: "Landing Page", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$34,295", status: "Andamento" },
+    { name: "CESAR", project: "VoltAI", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$342,95", status: "Concluido" },
+    { name: "Apple", project: "BioFuture", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$100,95", status: "Cancelado" },
+    { name: "Accenture", project: "TechMoms", date: "12/09/2024 - 12:53", tech: "FullStack", revenue: "R$34.295", status: "Andamento" },
   ];
 
   return (

@@ -5,25 +5,25 @@ const testimonials = [
   {
     name: 'Roberta',
     role: 'Desenvolvimento',
-    feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
+    feedback: 'Consegui uma vaga Full-Stack numa empresa de tecnologia para desenvolver um site. Gostei muito da experiência e recomendo.',
     rating: 5,
   },
   {
     name: 'Júlia',
     role: 'Designer',
-    feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
+    feedback: 'Fui contratada por uma empresa para fazer o design de um aplicativo e finalmente consegui conciliar minha vida profissional com a pessoal.',
     rating: 5,
   },
   {
     name: 'Fernanda',
     role: 'Software Engineer',
-    feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
+    feedback: 'Consegui um trabalho como engenheira de software para participar do desenvolvimento de um sistema inovador. Foi uma experiência incrível, cheia de aprendizados e desafios que me permitiram crescer tanto profissionalmente quanto pessoalmente.',
     rating: 5,
   },
   {
     name: 'Brunna',
     role: 'Representante da Google',
-    feedback: 'Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo Texto Exemplo.',
+    feedback: 'Contratei uma freelancer para o desenvolvimento de uma API, fiquei muito satisfeita com o serviço.',
     rating: 5,
   },
   {

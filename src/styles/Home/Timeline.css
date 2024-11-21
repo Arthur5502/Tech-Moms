@@ -45,7 +45,7 @@
   
   .timeline-espaco {
     display: flex;
-    gap: 8rem; 
+    gap: 12rem; 
   }
   
   .timeline-line {
@@ -96,7 +96,7 @@
     margin: 0 40px;
   }
   .timeline-step.top {
-    transform: translateY(-150px); 
+    transform: translateY(-150px);
   }
   
   .timeline-step.bottom {
@@ -143,4 +143,27 @@
     align-items: center;
     gap: 10px; 
     font-size: 1em; 
+  }
+  .timeline-step.top.id1{
+    transform: translate(6rem ,-150px);
+  }
+
+  .timeline-step.top.id3{
+    transform: translate(1rem ,-150px);
+  }
+
+  .timeline-step.top.id5{
+    transform: translate(-6rem ,-150px);
+  }
+
+  .timeline-step.bottom.id2{
+    transform: translate(4rem, 150px);
+  }
+
+  .timeline-step.bottom.id4{
+    transform: translate(-3rem, 150px);
+  }
+
+  .timeline-step.bottom.id6{
+    transform: translate(-9rem, 150px);
   }
