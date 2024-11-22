@@ -55,7 +55,6 @@
   line-height: 1.9;
 }
 
-
 .user-thumbnails {
   display: flex;
   justify-content: center;
@@ -125,4 +124,145 @@
   background: linear-gradient(to right, #F76680, #57007B);
   margin: 0 auto 10px;
   margin-bottom: 30px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .arrow-left, .arrow-right {
+    margin: 0 100px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .testimonial-content {
+    max-width: 500px;
+    padding: 15px;
+  }
+
+  .feedback {
+    font-size: 1rem;
+  }
+
+  .user-thumbnails {
+    gap: 30px;
+  }
+
+  .user-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .user-circle.active {
+    width: 90px;
+    height: 90px;
+  }
+
+  .thumbnail .name {
+    font-size: 0.9rem;
+  }
+
+  .thumbnail.active .name {
+    font-size: 1rem;
+  }
+
+  .thumbnail .role {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arrow-left, .arrow-right {
+    margin: 0 50px;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .testimonial-content {
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .feedback {
+    font-size: 0.9rem;
+  }
+
+  .user-thumbnails {
+    gap: 20px;
+  }
+
+  .user-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-circle.active {
+    width: 80px;
+    height: 80px;
+  }
+
+  .thumbnail .name {
+    font-size: 0.8rem;
+  }
+
+  .thumbnail.active .name {
+    font-size: 0.9rem;
+  }
+
+  .thumbnail .role {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .arrow-left, .arrow-right {
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .testimonial-content {
+    max-width: 300px;
+    padding: 5px;
+  }
+
+  .feedback {
+    font-size: 0.8rem;
+  }
+
+  .user-thumbnails {
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .thumbnail {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .user-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-circle.active {
+    width: 70px;
+    height: 70px;
+  }
+
+  .thumbnail .name {
+    font-size: 0.7rem;
+  }
+
+  .thumbnail.active .name {
+    font-size: 0.8rem;
+  }
+
+  .thumbnail .role {
+    font-size: 0.6rem;
+  }
 }

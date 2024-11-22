@@ -17,7 +17,7 @@ const testimonials = [
   {
     name: 'Fernanda',
     role: 'Software Engineer',
-    feedback: 'Consegui um trabalho como engenheira de software para participar do desenvolvimento de um sistema inovador. Foi uma experiência incrível, cheia de aprendizados e desafios que me permitiram crescer tanto profissionalmente quanto pessoalmente.',
+    feedback: 'Trabalhei como engenheira de software no desenvolvimento de um sistema inovador, ganhando experiência e aprendendo com os desafios.',
     rating: 5,
   },
   {

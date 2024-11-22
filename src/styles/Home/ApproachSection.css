@@ -1,25 +1,26 @@
 .approach-section {
     font-family: 'Inter', sans-serif;
-    background-color: #F9F9FF
-}
-
-.approach-section .section-title {
+    background-color: #F9F9FF;
+    padding: 20px;
+  }
+  
+  .approach-section .section-title {
     font-size: 28px;
     font-weight: normal;
     text-align: center;
     margin-bottom: 12px;
     margin-top: 28px;
-}
-
-.approach-section .section-subtitle {
+  }
+  
+  .approach-section .section-subtitle {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 28px;
     margin-top: 12px;
-}
-
-.approach-section h2::before {
+  }
+  
+  .approach-section h2::before {
     content: '';
     display: block;
     width: 60px;
@@ -27,21 +28,21 @@
     background: linear-gradient(to right, #F76680, #57007B);
     margin: 0 auto 10px;
     margin-bottom: 30px;
-}
-
-.cards-container {
+  }
+  
+  .cards-container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 40px;
     padding: 0 100px;
-}
-
-.cards-group-separator {
+  }
+  
+  .cards-group-separator {
     margin-top: 48px;
-}
-
-.approach-card {
+  }
+  
+  .approach-card {
     display: flex;
     width: 100%;
     background-color: #fff;
@@ -51,96 +52,167 @@
     transition: border-color 0.3s ease;
     border: 2px solid transparent;
     height: auto;
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.approach-card:hover {
+  }
+  
+  .approach-card:hover {
     border-color: #9b51e0;
-}
-
-.card-icon {
+  }
+  
+  .card-icon {
     display: block;
     width: 50px;
     height: auto;
     margin-bottom: 15px;
     object-fit: contain;
-}
-
-.approach-card h3 {
+  }
+  
+  .approach-card h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.approach-card p {
+  }
+  
+  .approach-card p {
     font-size: 16px;
     color: #666;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 1024px) {
     .cards-container {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
     }
-}
-
-.technologies-section {
+  
+    .approach-card {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 30px;
+    }
+  
+    .approach-section .section-title {
+      font-size: 24px;
+    }
+  
+    .approach-section .section-subtitle {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+  
+    .approach-card {
+      width: 90%;
+      margin-bottom: 20px;
+      padding: 25px;
+    }
+  
+    .approach-section .section-title {
+      font-size: 22px;
+    }
+  
+    .approach-section .section-subtitle {
+      font-size: 26px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 5px;
+    }
+  
+    .approach-card {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+  
+    .approach-section .section-title {
+      font-size: 20px;
+    }
+  
+    .approach-section .section-subtitle {
+      font-size: 24px;
+    }
+  }
+  
+  .technologies-section {
     padding: 40px 20px;
     text-align: center;
     background-color: #f9f9f9;
-}
-
-.technologies-menu {
+  }
+  
+  .technologies-menu {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
     gap: 60px;
-}
-
-.technologies-menu span {
+  }
+  
+  .technologies-menu span {
     font-size: 18px;
     color: #666;
     cursor: pointer;
     transition: color 0.3s, border-bottom 0.3s;
-}
-
-.technologies-menu .active {
+  }
+  
+  .technologies-menu .active {
     font-weight: bold;
     color: #e52e71;
     border-bottom: 2px solid #e52e71;
     padding-bottom: 5px;
-}
-
-.technologies-grid {
+  }
+  
+  .technologies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 40px;
     justify-items: center;
-}
-
-.technologies-grid img {
+  }
+  
+  .technologies-grid img {
     width: 150px;
     height: 86px;
     object-fit: contain;
-}
-
-@media (max-width: 1024px) {
+  }
+  
+  @media (max-width: 1024px) {
     .technologies-grid {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
-
-@media (max-width: 768px) {
+  
+    .technologies-menu {
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
     .technologies-grid {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
-
-@media (max-width: 480px) {
+  
+    .technologies-menu {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
     .technologies-grid {
-        grid-template-columns: 1fr;
+      grid-template-columns: repeat(3, 1fr);
     }
-}
+  
+    .technologies-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

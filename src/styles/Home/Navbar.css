@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; 
-  background-color: #ffffff; 
+  padding: 1rem 2rem;
+  background-color: #ffffff;
   font-family: 'Inter';
   position: sticky;
   top: 0;
@@ -33,7 +33,7 @@
   display: flex;
   list-style: none;
   margin: 0;
-  justify-content: center; 
+  justify-content: center;
   flex-grow: 1;
   font-family: 'Inter';
 }
@@ -54,7 +54,7 @@
 
 .navbar-menu a {
   text-decoration: none;
-  color: #333; 
+  color: #333;
   transition: color 0.3s;
   font-family: 'Inter';
 }
@@ -68,8 +68,8 @@
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px; 
-  cursor: pointer; 
+  padding: 10px 20px;
+  cursor: pointer;
   transition: background-color 0.3s;
   font-family: 'Inter';
 }
@@ -79,8 +79,8 @@
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px; 
-  cursor: pointer; 
+  padding: 10px 20px;
+  cursor: pointer;
   transition: background-color 0.3s;
   font-family: 'Inter';
 }
@@ -89,16 +89,19 @@
   background-color: #ee0979;
 }
 
-/* Responsividade para 900px */
 @media screen and (max-width: 900px) {
   .navbar-menu {
-    display: none; /* Esconde o menu em telas menores */
+    display: none;
   }
 }
 
-/* Responsividade para 600px */
 @media screen and (max-width: 600px) {
   .navbar-menu {
-    display: none; /* Esconde o menu em telas menores */
+    display: none;
+  }
+
+  .navbar-logo {
+    height: 30px;
+    font-size: 20px;
   }
 }

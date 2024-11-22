@@ -2,6 +2,7 @@
   text-align: center;
   padding: 80px 50px;
   background-color: #F9F9FF;
+  font-family: 'Inter';
 }
 
 .header-beneficios {
@@ -96,11 +97,13 @@
 .card-list {
   display: flex;
   gap: 20px;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   padding: 10px;
   width: 80%;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .card {
@@ -125,6 +128,7 @@
   padding: 10px;
   font-size: 14px;
   color: #2D3748;
+  text-align: justify; /* Justifica o texto */
 }
 
 .card-button {
@@ -138,7 +142,6 @@
   background: none;
   border: none;
   cursor: pointer;
-  
 }
 
 .controls-container {
@@ -178,8 +181,11 @@
   .card-list {
     width: 80%;
   }
-}
 
+  .controls-container {
+    display: none; /* Esconde as setas em telas maiores */
+  }
+}
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .header-content {
@@ -201,16 +207,19 @@
   .card {
     width: 180px;
   }
+
+  .controls-container {
+    display: flex; /* Mostra as setas em telas menores */
+  }
 }
 
-
 @media (max-width: 767px) {
-  .header {
+  .header-beneficios {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .header-content {
+  .header-content-beneficios {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
@@ -229,7 +238,7 @@
     width: 100%;
   }
 
-  .carousel {
+  .carrossel {
     margin-top: 60px;
   }
 
@@ -240,6 +249,62 @@
 
   .card {
     width: 160px;
+  }
+
+  .card p {
+    text-align: justify;
+  }
+
+  .controls-container {
+    display: flex; /* Mostra as setas em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-beneficios {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header-content-beneficios {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .carrossel {
+    margin-top: 40px;
+  }
+
+  .card-list {
+    width: 100%;
+    padding: 0;
+  }
+
+  .card {
+    width: 140px;
+  }
+
+  .card p {
+    text-align: justify;
+  }
+
+  .controls-container {
+    display: flex;
   }
 }
 

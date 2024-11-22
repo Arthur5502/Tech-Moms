@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../../styles/Home/Beneficios.css';
 import image1 from '../../assets/Home/image1.jpg';
 import image2 from '../../assets/Home/image2.png';
@@ -36,7 +36,7 @@ const HeaderBeneficios = ({ isCompany, setIsCompany }) => {
 
 const Card = ({ imageSrc, text }) => (
   <div className="card">
-    <div className="cards">
+    <div className="">
       <img src={imageSrc} alt="Card" />
     </div>
     <p>{text}</p>
@@ -81,6 +81,7 @@ const Carrossel = ({ items }) => {
 
 const Beneficios = () => {
   const [isCompany, setIsCompany] = useState(false);
+  const [displayedItems, setDisplayedItems] = useState([]);
 
   const freelaItems = [
     { imageSrc: image1, text: 'Trabalhe no seu ritmo: Escolha projetos que respeitem sua rotina e te permitam equilibrar o trabalho com os momentos mais importantes da sua vida.' },
@@ -106,15 +107,32 @@ const Beneficios = () => {
     { imageSrc: image3, text: 'Facilidade para achar a pessoa certa: Use ferramentas simples e práticas para filtrar freelancers, conferir portfólios e escolher com segurança.' },
     { imageSrc: image4, text: 'Fortaleça sua marca como inclusiva: Mostre que sua empresa valoriza a diversidade, apoiando mães talentosas a seguirem no mercado de tecnologia.' },
     { imageSrc: image5, text: 'Garantia de qualidade nas entregas: Com avaliações e feedbacks detalhados, além de um trabalho bem feito e no prazo.' },
-
   ];
 
   const items = isCompany ? companyItems : freelaItems;
 
+  useEffect(() => {
+    const updateDisplayedItems = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth > 768) {
+        setDisplayedItems(items.slice(0, 5));
+      } else {
+        setDisplayedItems(items.slice(0, 10));
+      }
+    };
+
+    updateDisplayedItems();
+    window.addEventListener('resize', updateDisplayedItems);
+
+    return () => {
+      window.removeEventListener('resize', updateDisplayedItems);
+    };
+  }, [items]);
+
   return (
     <div className="beneficios">
       <HeaderBeneficios isCompany={isCompany} setIsCompany={setIsCompany} />
-      <Carrossel items={items} />
+      <Carrossel items={displayedItems} />
     </div>
   );
 };
