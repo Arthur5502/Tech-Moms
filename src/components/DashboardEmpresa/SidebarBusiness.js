@@ -9,40 +9,44 @@ function SidebarBusiness({ isExpanded }) {
   return (
     <nav className={`sidebar-business ${isExpanded ? 'expanded' : ''}`}>
       <ul>
-        <li className={location.pathname === '/DashboardUsuario' ? 'active' : ''}>
-          <Link to="/dashboardEmpresa">
+        <li className={location.pathname === '/DashBoardEmpresa' ? 'active' : ''}>
+          <Link to="/DashBoardEmpresa">
             <MdDashboard className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Dashboard</span>
           </Link>
         </li>
-        <li>
+        <li className={location.pathname === '/businessFeed' ? 'active' : ''}>
           <Link to="/businessFeed">
             <MdHome className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Feed</span>
           </Link>
         </li>
-        <li>
-          <a href="/chatBusiness">
+        <li className={location.pathname === '/chatBusiness' ? 'active' : ''}>
+          <Link to="/chatBusiness">
             <MdEmail className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Chats</span>
-          </a>
+          </Link>
         </li>
-        <li>
-          <a href="/postedProjects">
+        <li className={location.pathname === '/postedProjects' ? 'active' : ''}>
+          <Link to="/postedProjects">
             <MdShoppingCart className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Projetos</span>
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="bottom-links-business">
-        <a href=".">
-          <MdSettings className="react-icon-business"/>
-          <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Configurações</span>
-        </a>
-        <a href="/">
-          <MdLogout className="react-icon-business"/>
-          <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Logout</span>
-        </a>
+        <li className={location.pathname === '.' ? 'active' : ''}>
+          <Link to=".">
+            <MdSettings className="react-icon-business"/>
+            <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Configurações</span>
+          </Link>
+        </li>
+        <li className={location.pathname === '/' ? 'active' : ''}>
+          <Link to="/">
+            <MdLogout className="react-icon-business"/>
+            <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Logout</span>
+          </Link>
+        </li>
       </div>
     </nav>
   );

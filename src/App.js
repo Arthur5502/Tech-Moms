@@ -8,8 +8,8 @@ import './styles/Global.css';
 import Carousel from './components/Home/Carousel';
 import CommunitySection from './components/Home/CommunitySection';
 import About from './components/Home/About';
-import DashboardUsuario from './pages/DashboardUsuario';
-import DashboardEmpresa from './pages/DashboardEmpresa';
+import DashboardUsuario from './pages/DashBoardUsuario';
+import DashboardEmpresa from './pages/DashBoardEmpresa';
 import NavbarUsuario from './components/DashboardUsuario/NavbarUsuario';
 import NavbarBusiness from './components/DashboardEmpresa/NavbarBusiness';
 import UserProfile from './components/DashboardUsuario/UserProfile';
@@ -26,6 +26,10 @@ function Main() {
        <Routes>
         <Route path="/dashboardUsuario" element={<NavbarUsuario />} />
         <Route path="/userProfile" element={<NavbarUsuario />} />
+        <Route path="/Courses" element={<NavbarUsuario />} />
+        <Route path="/ChatUser" element={<NavbarUsuario />} />
+        <Route path="/ChatBusiness" element={<NavbarBusiness />} />
+        <Route path="/postedProjects" element={<NavbarBusiness />} />
         <Route path="/dashboardEmpresa" element={<NavbarBusiness />} />
         <Route path="/signup" element={<Navbar />} />
         <Route path="/login" element={<Navbar />} />

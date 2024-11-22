@@ -15,34 +15,38 @@ function Sidebar({ isExpanded }) {
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Dashboard</span>
           </Link>
         </li>
-        <li>
-          <a href="/userFeed">
+        <li className={location.pathname === '/UserFeed' ? 'active' : ''}>
+          <Link to="/UserFeed">
             <MdHome className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Feed</span>
-          </a>
+          </Link>
         </li>
-        <li>
-          <a href="/chatUser">
+        <li className={location.pathname === '/ChatUser' ? 'active' : ''}>
+          <Link to="/ChatUser">
             <MdEmail className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Chats</span>
-          </a>
+          </Link>
         </li>
-        <li>
-          <a href="/courses">
+        <li className={location.pathname === '/Courses' ? 'active' : ''}>
+          <Link to="/Courses">
             <MdSchool className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Cursos</span>
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="bottom-links">
-        <a href=".">
-          <MdSettings className="react-icon"/>
-          <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Configurações</span>
-        </a>
-        <a href="/">
-          <MdLogout className="react-icon"/>
-          <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Logout</span>
-        </a>
+        <li className={location.pathname === '.' ? 'active' : ''}>
+          <Link to=".">
+            <MdSettings className="react-icon"/>
+            <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Configurações</span>
+          </Link>
+        </li>
+        <li className={location.pathname === '/' ? 'active' : ''}>
+          <Link to="/">
+            <MdLogout className="react-icon"/>
+            <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Logout</span>
+          </Link>
+        </li>
       </div>
     </nav>
   );

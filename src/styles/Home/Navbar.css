@@ -6,6 +6,7 @@
   background-color: #ffffff;
   font-family: 'Inter';
   position: sticky;
+  box-shadow: 3px 0 5px rgba(0,0,0,0.1);
   top: 0;
   z-index: 1000;
 }
