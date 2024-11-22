@@ -86,7 +86,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 10rem;
+  padding-right: 6rem;
 }
 .signup-header {
   display: flex;
@@ -248,22 +248,65 @@ body {
   opacity: 0.4;
 }
 
-@media (max-width: 600px) {
+/* Responsividade para 768px */
+@media (max-width: 768px) {
   .signup-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .left-side-image {
-    display: grig;
+    min-height: 100vh;
   }
 
   .signup-form {
-    max-width: 100%;
-    margin: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .role-buttons {
+    flex-direction: column;
+    gap: 15px; /* Ajuste no gap */
+  }
+
+  .role-buttons button {
+    padding: 15px 30px;
+    font-size: 16px;
   }
 
   .form-row {
     flex-direction: column;
+    gap: 1.3rem;
+  }
+}
+
+/* Responsividade para 480px */
+@media (max-width: 480px) {
+  .signup-container {
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0.1rem;
+  }
+
+  .left-side-image {
+    display: none;
+  }
+
+  .signup-form {
+    width: 85%;
+    margin: 1rem auto; 
+    padding: 0.6rem;
+  }
+
+  .role-buttons {
+    gap: 0.4rem;
+  }
+
+  .role-buttons button {
+    padding: 0.4rem 1.4rem;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 0.1rem; 
   }
 }

@@ -5,13 +5,17 @@ import { FcGoogle } from "react-icons/fc";
 
 const jobs = Array.from({ length: 15 }, (_, index) => ({
   id: index + 1,
-  title: index % 4 === 0 ? 'UI/UX Designer' : index % 4 === 1 ? 'Engenheiro de Software' : index % 4 === 2 ? 'Desenvolvedor Front-End' : 'Desenvolvedor Back-End',
+  title: index % 6 === 0 ? 'UI/UX Designer' : index % 6 === 1 ? 'Engenheira de Software' 
+  : index % 6 === 2 ? 'Desenvolvedora Front-End' : index % 6 === 3 ? 'Desenvolvedora Back-End'
+  : index % 6 === 4 ? 'Marketing Digital' : 'Edição',
   company: 'Google Inc.',
   location: 'Recife, Brasil',
   type: index % 3 === 0 ? 'Freelancer' : 'Tempo Integral',
   salary: 'R$ 20.000 - R$ 25.000',
-  tags: index % 2 === 0 ? ['Back-End', 'Júnior'] : ['Front-End', 'Pleno'],
-  rating: '5.0',
+  tags: index % 6 === 0 ? ['Designer', 'Pleno'] : index % 6 === 1 ? ['Engenheira de Software', 'Sênior']
+  : index % 6 === 2 ? ['Front-End', 'Pleno'] : index % 6 === 3 ? ['Back-End', 'Júnior']
+  : index % 6 === 4 ? ['Marketing Digital', 'Júnior'] : ['Edição', 'Pleno'],
+  rating: index % 2 === 0 ? '5.0' : '4.8',
   reviews: 378,
 }));
 

@@ -22,13 +22,13 @@ function Sidebar({ isExpanded }) {
           </a>
         </li>
         <li>
-          <a href=".">
+          <a href="/chatUser">
             <MdEmail className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Chats</span>
           </a>
         </li>
         <li>
-          <a href=".">
+          <a href="/courses">
             <MdSchool className="react-icon"/>
             <span className={`sidebar-text ${!isExpanded && 'hidden'}`}>Cursos</span>
           </a>

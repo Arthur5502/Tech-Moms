@@ -22,7 +22,7 @@ function SidebarBusiness({ isExpanded }) {
           </Link>
         </li>
         <li>
-          <a href=".">
+          <a href="/chatBusiness">
             <MdEmail className="react-icon-business"/>
             <span className={`sidebar-business-text ${!isExpanded && 'hidden'}`}>Chats</span>
           </a>

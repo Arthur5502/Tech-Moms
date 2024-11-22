@@ -167,3 +167,11 @@
   .timeline-step.bottom.id6{
     transform: translate(-9rem, 150px);
   }
+
+/* CSS para telas menores que 768px */
+@media (max-width: 768px) {
+  .timeline-section {
+    display: none; /* Remove a seção da tela */
+  }
+}
+

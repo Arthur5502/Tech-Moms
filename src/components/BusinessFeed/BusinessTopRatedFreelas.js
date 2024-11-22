@@ -7,12 +7,12 @@ const BusinessTopRatedFreelas = () => {
   const totalPages = 5;
 
   const freelancers = [
-    { name: 'Roberta', rating: '5.0', location: 'Recife, Brasil' },
-    { name: 'Fernanda', rating: '5.0', location: 'Natal, Brasil' },
-    { name: 'Júlia', rating: '5.0', location: 'Minas Gerais, Brasil' },
-    { name: 'laura', rating: '4.8', location: 'Amazonas, Brasil' },
-    { name: 'Brunna', rating: '4.9', location: 'Rio de Janeiro, Brasil' },
-    { name: 'Larissa', rating: '4.7', location: 'Maceió, Brasil' },
+    { name: 'Roberta', position: 'Engenheira de Software', rating: '5.0', location: 'Recife, Brasil' },
+    { name: 'Fernanda', position: 'Designer', rating: '5.0', location: 'Natal, Brasil' },
+    { name: 'Júlia', position: 'desenvolvedora Front-End', rating: '5.0', location: 'Minas Gerais, Brasil' },
+    { name: 'Laura', position: 'Editora de videos', rating: '4.8', location: 'Amazonas, Brasil' },
+    { name: 'Brunna', position: 'Designer', rating: '4.9', location: 'Rio de Janeiro, Brasil' },
+    { name: 'Larissa', position: 'Desenvolvedora Back-End', rating: '4.7', location: 'Maceió, Brasil' },
   ];
 
   const handlePageChange = (page) => {
@@ -32,6 +32,7 @@ const BusinessTopRatedFreelas = () => {
               <div className="profile-icon">
                 <span className="online-indicator"></span>
               </div>
+              <h4 className="position-professional">{freelancer.position}</h4>
             </div>
             <h3 className="freelancer-card-title">{freelancer.name}</h3>
             <div className="freelancer-rating">

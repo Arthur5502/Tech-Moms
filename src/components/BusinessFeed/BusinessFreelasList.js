@@ -3,8 +3,8 @@ import '../../styles/BusinessFeed/BusinessFreelasList.css';
 
 const freelancers = Array.from({ length: 15 }, (_, index) => ({
   id: index + 1,
-  title: index % 6 === 0 ? 'UI/UX Designer' : index % 6 === 1 ? 'Engenheiro de Software' 
-   : index % 6 === 2 ? 'Desenvolvedor Front-End' : index % 6 === 3 ? 'Desenvolvedor Back-End'
+  title: index % 6 === 0 ? 'UI/UX Designer' : index % 6 === 1 ? 'Engenheira de Software' 
+   : index % 6 === 2 ? 'Desenvolvedora Front-End' : index % 6 === 3 ? 'Desenvolvedora Back-End'
    : index % 6 === 4 ? 'Marketing Digital' : 'Edição',
   name: index % 6 === 0 ? 'Fernanda' : index % 6 === 1 ? 'Roberta'
    : index % 6 === 2 ? 'Júlia' : index % 6 === 3 ? 'brunna'
@@ -14,7 +14,7 @@ const freelancers = Array.from({ length: 15 }, (_, index) => ({
    : 'São Paulo, Brasil',
   type: index % 3 === 0 ? 'Freelancer' : 'Freelancer',
   rate: index % 4 === 0 ? 'R$ 100/hora' : index % 4 === 1 ? 'R$ 150/hora' : index % 4 === 2 ? 'R$ 80/hora' : 'R$ 120/hora',
-  tags: index % 6 === 0 ? ['Designer', 'Pleno'] : index % 6 === 1 ? ['Engenheiro de Software', 'Sênior']
+  tags: index % 6 === 0 ? ['Designer', 'Pleno'] : index % 6 === 1 ? ['Engenheira de Software', 'Sênior']
    : index % 6 === 2 ? ['Front-End', 'Pleno'] : index % 6 === 3 ? ['Back-End', 'Júnior']
    : index % 6 === 4 ? ['Marketing Digital', 'Júnior'] : ['Edição', 'Pleno'],
   rating: index % 2 === 0 ? '5.0' : '4.8',

@@ -14,6 +14,9 @@ import NavbarUsuario from './components/DashboardUsuario/NavbarUsuario';
 import NavbarBusiness from './components/DashboardEmpresa/NavbarBusiness';
 import UserProfile from './components/DashboardUsuario/UserProfile';
 import ProjectsEmpresa from './pages/ProjectsEmpresa';
+import Courses from './pages/Courses';
+import ChatUser from './pages/ChatUser';
+import ChatBusiness from './pages/ChatBusiness';
 import UserFeed from './pages/UserFeed';
 import BusinessFeed from './pages/BusinessFeed';
 
@@ -41,6 +44,9 @@ function Main() {
         <Route path="/userFeed" element={<UserFeed />} />
         <Route path="/businessFeed" element={<BusinessFeed />} />
         <Route path="/postedProjects" element={<ProjectsEmpresa />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/chatUser" element={<ChatUser />} />
+        <Route path="/chatBusiness" element={<ChatBusiness />} />
       </Routes>
     </>
   );
