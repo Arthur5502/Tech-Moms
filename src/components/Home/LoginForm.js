@@ -14,7 +14,7 @@ const LoginForm = () => {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h2>Bem vindo de volta</h2>
+        <h2>Bem vindo(a) de volta</h2>
         <h3>Entrar na Conta</h3>
         
         <button className="login-btn google">

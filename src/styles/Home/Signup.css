@@ -250,6 +250,11 @@ body {
 
 /* Responsividade para 768px */
 @media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    overflow-y: auto;   /* Mantém o scroll vertical */
+  }
+
   .signup-container {
     flex-direction: column;
     align-items: center;
@@ -279,6 +284,11 @@ body {
 
 /* Responsividade para 480px */
 @media (max-width: 480px) {
+  body, html {
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    overflow-y: auto;   /* Mantém o scroll vertical */
+  }
+
   .signup-container {
     flex-direction: column;
     align-items: center;
