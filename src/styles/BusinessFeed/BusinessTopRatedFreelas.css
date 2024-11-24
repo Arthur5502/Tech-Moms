@@ -1,13 +1,13 @@
-.freelancers-list-container {
+.top-freelancers-list-container {
   display: flex;
   flex-direction: column;
   width: 98%;
   padding: 2rem;
   background-color: #f5f6fa;
-  border-radius: 8px  
+  border-radius: 8px;
 }
 
-.freelancers-title {
+.top-freelancers-title {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
@@ -15,13 +15,13 @@
   color: #333;
 }
 
-.freelancers-list {
+.top-freelancers-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
-.freelancer-card {
+.top-freelancer-card {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -33,12 +33,12 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.freelancer-card:hover {
+.top-freelancer-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.freelancer-card-icon {
+.top-freelancer-card-icon {
   position: relative;
   width: 3rem;
   height: 3rem;
@@ -51,14 +51,14 @@
   gap: 4rem;
 }
 
-.position-professional h4 {
+.top-position-professional h4 {
   display: flex;
   align-items: center;
   width: 100%;
   font-size: 0.8rem;
 }
 
-.online-indicator {
+.top-online-indicator {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -69,7 +69,7 @@
   border: 2px solid #fff;
 }
 
-.freelancer-badge {
+.top-freelancer-badge {
   background-color: #ffcc00;
   color: #333;
   padding: 0.3rem 0.6rem;
@@ -81,14 +81,14 @@
   text-transform: uppercase;
 }
 
-.freelancer-card-title {
+.top-freelancer-card-title {
   font-size: 1.5rem;
   font-weight: 500;
   color: #333;
   margin-bottom: 0.5rem;
 }
 
-.freelancer-rating {
+.top-freelancer-rating {
   font-size: 1rem;
   color: #333;
   margin-bottom: 0.5rem;
@@ -96,12 +96,12 @@
   align-items: center;
 }
 
-.freelancer-rating .star-icon {
+.top-freelancer-rating .top-star-icon {
   color: #ffc107;
   margin-right: 0.5rem;
 }
 
-.freelancer-location {
+.top-freelancer-location {
   font-size: 1rem;
   color: #666;
   margin-bottom: 0.5rem;
@@ -109,27 +109,27 @@
   align-items: center;
 }
 
-.freelancer-location .location-icon {
+.top-freelancer-location .top-location-icon {
   margin-right: 0.5rem;
   color: #999;
 }
 
-.freelancer-jobs {
+.top-freelancer-jobs {
   font-size: 1rem;
   color: #6c63ff;
   margin-top: 0.5rem;
   font-weight: bold;
 }
 
-.freelancers-pagination {
+.top-freelancers-pagination {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
 }
 
-.freelancers-pagination-button,
-.freelancers-pagination-number {
+.top-freelancers-pagination-button,
+.top-freelancers-pagination-number {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 40px;
@@ -138,26 +138,128 @@
   margin: 0 0.2rem;
 }
 
-.freelancers-pagination-button:hover,
-.freelancers-pagination-number:hover {
+.top-freelancers-pagination-button:hover,
+.top-freelancers-pagination-number:hover {
   background-color: #5848c2;
 }
 
-.freelancers-pagination-number {
+.top-freelancers-pagination-number {
   background-color: transparent;
   color: #333;
 }
 
-.freelancers-pagination-number.active {
+.top-freelancers-pagination-number.active {
   background-color: #5848c2; 
   color: #fff;
 }
 
-.freelancers-button-business{
+.top-freelancers-button-business {
   background: linear-gradient(90deg, #6675F7, #57007B);
   color: #fff;
   padding: 0.7rem 1.5rem;
   border-radius: 40px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .top-freelancers-list-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .top-freelancer-card {
+    padding: 1rem;
+  }
+
+  .top-freelancer-card-title {
+    font-size: 1.3rem;
+  }
+
+  .top-freelancer-rating,
+  .top-freelancer-location,
+  .top-freelancer-jobs {
+    font-size: 0.9rem;
+  }
+
+  .top-freelancer-card-icon {
+    font-size: 2.5rem;
+  }
+
+  .top-freelancer-badge {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-freelancers-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    transform: translateX(-1.7rem);
+  }
+
+  .top-freelancer-card {
+    padding: 0.75rem;
+  }
+
+  .top-freelancer-title {
+    font-size: 1.2rem;
+  }
+
+  .top-freelancer-rating,
+  .top-freelancer-location,
+  .top-freelancer-jobs {
+    font-size: 0.85rem;
+  }
+
+  .top-freelancer-card-icon {
+    font-size: 2rem;
+  }
+
+  .top-freelancer-badge {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-freelancers-list-container {
+    padding: 1rem;
+    transform: translateX(1.5rem);
+  }
+
+  .top-freelancers-title {
+    font-size: 1.5rem;
+    transform: translate(-1.7rem);
+  }
+
+  .top-freelancer-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .top-freelancer-card {
+    padding: 0.5rem;
+  }
+
+  .top-freelancer-card-title {
+    font-size: 1rem;
+  }
+
+  .top-freelancer-rating,
+  .top-freelancer-location,
+  .top-freelancer-jobs {
+    font-size: 0.75rem;
+  }
+
+  .top-freelancer-card-icon {
+    font-size: 1.5rem;
+  }
+
+  .top-freelancer-badge {
+    font-size: 0.5rem;
+  }
+
+  .top-freelancers-pagination {
+    transform: translate(-2rem);
+  }
 }

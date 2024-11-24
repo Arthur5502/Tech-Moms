@@ -98,3 +98,85 @@
   right: 2px;
   border: 2px solid #fff;
 }
+
+@media screen and (max-width: 1024px) {
+  .search-bar-business {
+    width: 250px;
+  }
+
+  .icon-business {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+
+  .user-info-business {
+    font-size: 12px;
+  }
+
+  .user-avatar-business {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-business {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 5px 10px;
+    overflow: hidden;
+  }
+
+  .navbar-left-business,
+  .navbar-center-business,
+  .navbar-right-business {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .search-bar-business {
+    flex-shrink: 1;
+    max-width: 200px;
+    margin-left: 10px;
+  }
+
+  .icon-business,
+  .user-info-business {
+    flex-shrink: 0;
+  }
+
+  .menu-icon-business {
+    margin-right: 5px;
+  }
+
+  .icon-business {
+    margin-right: 10px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .search-bar-business {
+    max-width: 150px;
+    transform: translateX(-1rem);
+  }
+
+  .menu-icon-business {
+    font-size: 18px;
+  }
+
+  .icon-business {
+    margin-right: 5px;
+  }
+
+  .user-info-business {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .user-avatar-business {
+    width: 20px;
+    height: 20px;
+  }
+}

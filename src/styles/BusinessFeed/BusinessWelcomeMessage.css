@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: #EFEFF0;
+  background: white;
   padding: 1.2rem;
   margin-left: 1.2rem;
   border-radius: 1rem;
@@ -43,5 +43,52 @@
   
   .business-welcome-button:hover {
     opacity: 0.9;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .business-welcome-container {
+      max-width: 12rem;
+      padding: 1rem;
+    }
+  
+    .business-welcome-title {
+      font-size: 1.3rem;
+    }
+  
+    .business-welcome-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .business-welcome-container {
+      max-width: 10rem;
+      padding: 0.8rem;
+    }
+  
+    .business-welcome-title {
+      font-size: 1.2rem;
+    }
+  
+    .business-welcome-text {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .business-welcome-container {
+      max-width: 8rem;
+      padding: 0.6rem;
+      margin-left: 0.6rem;
+      transform: translateX(0.3rem);
+    }
+  
+    .business-welcome-title {
+      font-size: 1rem;
+    }
+  
+    .business-welcome-text {
+      font-size: 0.75rem;
+    }
   }
   

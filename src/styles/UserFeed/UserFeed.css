@@ -1,13 +1,17 @@
+.user-feed-page-container {
+  overflow-x: hidden;
+}
+
 .user-feed-top {
   display: flex; 
   align-items: flex-start; 
-  gap: 2rem; 
+  gap: 1rem; 
   background-color: #f5f6fa;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: 'Inter';
   padding-left: 70px;
+  transform: translateX(-2rem);
 }
 
 .user-feed-mid {

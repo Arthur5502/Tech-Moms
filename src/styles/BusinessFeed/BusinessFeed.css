@@ -1,3 +1,7 @@
+.business-feed-page-container {
+  overflow-x: hidden;
+}
+
 .business-feed-top {
     display: flex; 
     align-items: flex-start; 

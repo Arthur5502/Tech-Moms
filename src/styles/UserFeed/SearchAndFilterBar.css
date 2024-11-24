@@ -42,3 +42,42 @@
 .search-button:hover {
   opacity: 0.9;
 }
+
+@media screen and (max-width: 1024px) {
+  .search-filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .search-input, .filter-select, .search-button {
+    width: 100%;
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-filter-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .search-input, .filter-select, .search-button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-filter-container {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .search-input {
+    width: 8rem
+  } 
+  
+  .filter-select, .search-button {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+}

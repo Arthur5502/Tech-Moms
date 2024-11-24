@@ -43,3 +43,41 @@
     opacity: 0.9;
   }
   
+  @media screen and (max-width: 1024px) {
+    .business-search-filter-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+    }
+  
+    .business-search-input, .business-filter-select, .business-search-button {
+      width: 100%;
+      padding: 0.6rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .business-search-filter-container {
+      padding: 0.8rem 1rem;
+    }
+  
+    .business-search-input, .business-filter-select, .business-search-button {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .business-search-filter-container {
+      padding: 0.5rem 0.8rem;
+    }
+  
+    .business-search-input {
+      width: 8rem
+    } 
+    
+    .business-filter-select, .business-search-button {
+      font-size: 0.8rem;
+      padding: 0.4rem;
+    }
+  }

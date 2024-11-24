@@ -78,3 +78,9 @@
   font-size: 0.875rem;
   color: #636e72;
 }
+
+@media screen and (max-width: 480px) {
+  .job-categories-container {
+    display: none;
+  }
+}

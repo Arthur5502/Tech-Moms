@@ -79,3 +79,9 @@
   padding: 0;
   margin: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .freela-categories-container {
+    display: none;
+  }
+}
