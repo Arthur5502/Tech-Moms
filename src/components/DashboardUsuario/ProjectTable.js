@@ -45,7 +45,6 @@ const ProjectTable = () => {
           <div className="table-row" key={index}>
             <div className="cell">
               <div className="account-info">
-                <span className="avatar" />
                 {project.name}
               </div>
             </div>

@@ -28,3 +28,36 @@
     color: #61dafb;
   }
   
+  @media (max-width: 768px) {
+    .footer-empresa {
+        flex-direction: column; 
+        padding: 15px;
+        text-align: center; 
+    }
+  
+    .footer-empresa-left,
+    .footer-empresa-right {
+        margin-bottom: 10px; 
+    }
+  
+    .footer-empresa-left a {
+        padding-left: 2rem; 
+        margin-right: 0;
+    }
+  
+    .footer-empresa-right a {
+        margin-left: 0; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-empresa {
+        padding: 10px;
+    }
+  
+    .footer-empresa-left a,
+    .footer-empresa-right a {
+        font-size: 14px; 
+        padding-left: 1rem;
+    }
+  }
