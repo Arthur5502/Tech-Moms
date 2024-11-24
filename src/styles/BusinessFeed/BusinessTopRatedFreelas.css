@@ -243,6 +243,7 @@
 
   .top-freelancer-card-title {
     font-size: 1rem;
+    gap: 4rem;
   }
 
   .top-freelancer-rating,
