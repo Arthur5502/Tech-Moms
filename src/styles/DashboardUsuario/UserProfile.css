@@ -262,12 +262,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  body, html {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    min-height: 120vh;
-  }
-  
   .perfil-container {
     flex-direction: column;
     padding: 1.5rem;
@@ -308,7 +302,7 @@
   body, html {
     overflow-x: hidden;
     overflow-y: scroll;
-    min-height: 120vh;
+    min-height: 130vh;
   }
 
   .perfil-content {
@@ -378,7 +372,7 @@
   body, html {
     overflow-x: hidden;
     overflow-y: scroll;
-    min-height: 120vh;
+    min-height: 130vh;
   }
 
   .perfil-content {
