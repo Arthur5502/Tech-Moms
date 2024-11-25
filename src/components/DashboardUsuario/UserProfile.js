@@ -3,11 +3,12 @@ import '../../styles/DashboardUsuario/UserProfile.css';
 
 const UserProfile = () => {
   const [selectedSkills, setSelectedSkills] = useState([]);
-  const [textFormat, setTextFormat] = useState({ bold: false, italic: false, underline: false, fontFamily: 'Arial' });
+  const [textFormat] = useState({fontFamily: 'Arial' });
   const [daysAvailable, setDaysAvailable] = useState([]);
   const [availableCount, setAvailableCount] = useState(0);
-  const [userName] = useState("Nome Sobrenome");
+  const [userName] = useState("Maria Eduarda");
   const textAreaRef = useRef(null);
+  const fileInputRef = useRef(null);
 
   const skills = [
     "JavaScript", "Python", "Java", "C++", "SQL", "HTML", "CSS", "React", "Node.js", 
@@ -15,55 +16,20 @@ const UserProfile = () => {
     "Communication", "Problem-solving", "Teamwork", "Leadership", "Time Management", 
     "Critical Thinking", "Adaptability", "Creativity", "Attention to Detail", 
     "Project Management", "Data Analysis", "Machine Learning", "Cloud Computing", 
-    "Cybersecurity", "DevOps", "Agile Methodologies", "UI/UX Design", "Graphic Design", 
-    "Digital Marketing", "SEO", "Content Creation", "Public Speaking", "Negotiation", 
-    "Conflict Resolution", "Customer Service", "Sales", "Financial Analysis", 
-    "Accounting", "Business Strategy", "Product Management", "Software Development", 
-    "Network Administration", "Database Management", "Technical Writing", "Research", 
-    "Teaching", "Training", "Coaching", "Mentoring", "Event Planning", "Human Resources", 
-    "Legal Compliance", "Risk Management", "Supply Chain Management", "Operations Management"
+    "Cybersecurity", "DevOps", "Agile Methodologies", "UI/UX Design", "Graphic Design",
   ];
 
   const toggleSkill = (skill) => {
     setSelectedSkills(prev => prev.includes(skill) ? prev.filter(s => s !== skill) : [...prev, skill]);
   };
 
-  const toggleFormat = (type) => {
-    setTextFormat(prev => ({ ...prev, [type]: !prev[type] }));
-    applyTextFormat(type);
-  };
-
-  const applyTextFormat = (type) => {
-    const textarea = textAreaRef.current;
-    const start = textarea.selectionStart;
-    const end = textarea.selectionEnd;
-    const selectedText = textarea.value.substring(start, end);
-    let formattedText;
-
-    switch (type) {
-      case 'bold':
-        formattedText = `<b>${selectedText}</b>`;
-        break;
-      case 'italic':
-        formattedText = `<i>${selectedText}</i>`;
-        break;
-      case 'underline':
-        formattedText = `<u>${selectedText}</u>`;
-        break;
-      default:
-        formattedText = selectedText;
-    }
-
-    textarea.setRangeText(formattedText, start, end, 'end');
-  };
-
-  const handleFontChange = (e) => {
-    setTextFormat({ ...textFormat, fontFamily: e.target.value });
-  };
-
   const handleDaySelect = (day) => {
     setDaysAvailable(prev => prev.includes(day) ? prev.filter(d => d !== day) : [...prev, day]);
     setAvailableCount(prev => daysAvailable.includes(day) ? prev - 1 : prev + 1);
+  };
+
+  const handleImageUpload = () => {
+    fileInputRef.current.click();
   };
 
   return (
@@ -91,18 +57,6 @@ const UserProfile = () => {
           </div>
           <div className="resumo-profissional">
             <h3>Resumo Profissional</h3>
-            <div className="editor-toolbar">
-              <select onChange={handleFontChange}>
-                <option value="Arial">Arial</option>
-                <option value="Times New Roman">Times New Roman</option>
-                <option value="Courier New">Courier New</option>
-                <option value="Georgia">Georgia</option>
-                <option value="Verdana">Verdana</option>
-              </select>
-              <button onClick={() => toggleFormat('bold')} className={textFormat.bold ? 'active' : ''}>B</button>
-              <button onClick={() => toggleFormat('italic')} className={textFormat.italic ? 'active' : ''}>I</button>
-              <button onClick={() => toggleFormat('underline')} className={textFormat.underline ? 'active' : ''}>U</button>
-            </div>
             <textarea
               ref={textAreaRef}
               className="editor-textarea"
@@ -120,7 +74,17 @@ const UserProfile = () => {
           <h3>Visualização do seu Perfil</h3>
           <div className="perfil-info">
             <div className="perfil-nome">{userName}</div>
-            <input type="file" accept="image/png" className="escolher-img" />
+            <div className="perfil-foto"></div>
+            <input
+              type="file"
+              accept="image/png"
+              className="escolher-img"
+              ref={fileInputRef}
+              style={{ display: 'none' }}
+            />
+            <button className="upload-button" onClick={handleImageUpload}>
+              Escolher Imagem
+            </button>
           </div>
           <div className="horarios-disponiveis">
             <h3>Horários Disponíveis</h3>
