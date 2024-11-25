@@ -5,7 +5,11 @@ body {
   height: 100vh;
   font-family: 'Inter';
   background: linear-gradient(45deg, #f0f0f5, #e6e6fa);
-  overflow: visible;
+  overflow: auto; 
+}
+
+.signup-page {
+  overflow: auto; 
 }
 
 .signup-container {
@@ -287,8 +291,11 @@ body {
 /* Responsividade para 480px */
 @media (max-width: 480px) {
   body, html {
-    overflow-y: auto;
     min-height: 130vh;
+  }
+
+  .signup-page {
+    overflow: auto;
   }
 
   .signup-container {
