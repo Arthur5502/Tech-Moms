@@ -299,6 +299,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .perfil-container {
+    min-height: 150vh;
+  }
+  
   .perfil-content {
     display: flex;
     flex-direction: column;
@@ -364,7 +368,7 @@
 
 @media screen and (max-width: 480px) {
   .perfil-container {
-    min-height: 120vh;
+    min-height: 150vh;
   }
   
   .perfil-content {

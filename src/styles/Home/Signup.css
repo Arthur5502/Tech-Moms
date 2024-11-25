@@ -289,8 +289,6 @@ body {
 /* Responsividade para 480px */
 @media (max-width: 480px) {
   body, html {
-    overflow-x: hidden;
-    overflow-y: scroll;
     min-height: 130vh;
   }
 
