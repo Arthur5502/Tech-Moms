@@ -127,6 +127,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .login-page {
+    overflow: hidden;
+  }
+  
   .login-container {
     padding: 0.8rem;
     background-position: top;
