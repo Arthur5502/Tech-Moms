@@ -1,4 +1,8 @@
 body {
+  overflow: auto;
+}
+
+.login-page {
   overflow: hidden;
 }
 
