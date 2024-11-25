@@ -254,8 +254,8 @@ body {
 
 @media (max-width: 768px) {
   body, html {
-    overflow-x: hidden; /* Remove o scroll horizontal */
-    overflow-y: auto;   /* Mantém o scroll vertical */
+    overflow-x: hidden;
+    overflow-y: scroll;  
   }
 
   .signup-container {
@@ -271,7 +271,7 @@ body {
 
   .role-buttons {
     flex-direction: column;
-    gap: 15px; /* Ajuste no gap */
+    gap: 15px;
   }
 
   .role-buttons button {
@@ -288,8 +288,8 @@ body {
 /* Responsividade para 480px */
 @media (max-width: 480px) {
   body, html {
-    overflow-x: hidden; /* Remove o scroll horizontal */
-    overflow-y: auto;   /* Mantém o scroll vertical */
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   .signup-container {
