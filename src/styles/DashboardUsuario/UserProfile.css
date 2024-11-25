@@ -299,8 +299,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .perfil-container {
-    min-height: 300vh;
+  body, html {
+    min-height: 130vh;
   }
   
   .perfil-content {
@@ -367,8 +367,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .perfil-container {
-    min-height: 300vh;
+  body, html {
+    min-height: 130vh;
   }
   
   .perfil-content {
