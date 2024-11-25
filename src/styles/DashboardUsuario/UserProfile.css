@@ -300,7 +300,7 @@
 
 @media screen and (max-width: 768px) {
   body, html {
-    min-height: 130vh;
+    min-height: 180vh;
   }
   
   .perfil-content {
