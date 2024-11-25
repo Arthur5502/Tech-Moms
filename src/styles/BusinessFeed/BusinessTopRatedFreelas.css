@@ -44,7 +44,7 @@
   width: 100%;
   background-color: white;
   margin-bottom: 0.5rem;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .top-profile-icon {
@@ -233,7 +233,7 @@
 @media screen and (max-width: 480px) {
   .top-freelancers-list-container {
     padding: 1rem;
-    transform: translateX(1.5rem);
+    transform: translateX(1rem);
   }
 
   .top-freelancers-title {
@@ -243,10 +243,15 @@
 
   .top-position-professional {
     display: flex;
+    justify-content: start;
     align-items: center;
     font-size: 1.3rem;
   }
 
+  .top-profile-icon {
+    width: 5rem;
+    height: 3rem;
+  }
   .top-freelancer-list {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -270,7 +275,10 @@
   }
 
   .top-freelancer-card-icon {
-    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
 
   .top-freelancer-badge {
