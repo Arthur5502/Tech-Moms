@@ -85,9 +85,7 @@ https://tech-moms.vercel.app/
 O diretório gerado está hospedado na plataforma Vercel.
 
 ## Melhorias Futuras
-Integrar suporte para Docker para criar um ambiente de desenvolvimento consistente.
-Expandir o sistema de IA com modelos mais avançados.
-Implementar notificações em tempo real via WebSockets ou Firebase.
+Concluir as funcionalidades das telas presentes no site e integrar o site com o Back-End e banco de dados.
 
 ## Desenvolvedores
 
