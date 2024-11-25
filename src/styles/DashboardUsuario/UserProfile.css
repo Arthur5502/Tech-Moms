@@ -4,7 +4,7 @@
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-left: 4.5rem;
   overflow-x: hidden;
   overflow-y: auto;
@@ -299,10 +299,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    min-height: 130vh;
-  }
-  
   .perfil-content {
     display: flex;
     flex-direction: column;
@@ -367,10 +363,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    min-height: 130vh;
-  }
-
   .perfil-content {
     display: flex;
     flex-direction: column;
