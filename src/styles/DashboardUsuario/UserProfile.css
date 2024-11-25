@@ -368,6 +368,7 @@
     flex-direction: column;
     gap: 2rem;
     margin-left: 2rem;
+    min-height: 110vh;
   }
 
   .perfil-visualizacao {
