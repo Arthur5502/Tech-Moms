@@ -295,7 +295,8 @@ body {
   }
 
   .signup-page {
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   .signup-container {
