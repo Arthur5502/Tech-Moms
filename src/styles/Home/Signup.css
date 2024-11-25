@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-family: 'Inter';
   background: linear-gradient(45deg, #f0f0f5, #e6e6fa);
   overflow: visible;
@@ -256,6 +256,7 @@ body {
   body, html {
     overflow-x: hidden;
     overflow-y: scroll;  
+    min-height: 100vh;
   }
 
   .signup-container {
@@ -290,6 +291,7 @@ body {
   body, html {
     overflow-x: hidden;
     overflow-y: scroll;
+    min-height: 100vh;
   }
 
   .signup-container {
