@@ -6,7 +6,7 @@ const testimonials = [
     name: 'Roberta',
     role: 'Desenvolvimento',
     feedback: 'Consegui uma vaga Full-Stack numa empresa de tecnologia para desenvolver um site. Gostei muito da experiência e recomendo.',
-    rating: 5,
+    rating: 4,
   },
   {
     name: 'Júlia',
@@ -18,7 +18,7 @@ const testimonials = [
     name: 'Fernanda',
     role: 'Software Engineer',
     feedback: 'Trabalhei como engenheira de software no desenvolvimento de um sistema inovador, ganhando experiência e aprendendo com os desafios.',
-    rating: 5,
+    rating: 4,
   },
   {
     name: 'Brunna',
@@ -30,7 +30,7 @@ const testimonials = [
     name: 'Marina',
     role: 'Representante da Amazon',
     feedback: 'Contratei uma freelancer para um projeto de uma landing page, fiquei muito satisfeita com o desenvolvimento dessa pessoa no projeto.',
-    rating: 5,
+    rating: 4,
   },
 ];
 
