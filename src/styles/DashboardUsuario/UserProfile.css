@@ -300,7 +300,7 @@
 
 @media screen and (max-width: 768px) {
   .perfil-container {
-    min-height: 150vh;
+    min-height: 300vh;
   }
   
   .perfil-content {
@@ -368,7 +368,7 @@
 
 @media screen and (max-width: 480px) {
   .perfil-container {
-    min-height: 150vh;
+    min-height: 300vh;
   }
   
   .perfil-content {
