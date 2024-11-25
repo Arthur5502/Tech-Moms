@@ -256,13 +256,13 @@ body {
   body, html {
     overflow-x: hidden;
     overflow-y: scroll;  
-    min-height: 130vh;
+    min-height: 120vh;
   }
 
   .signup-container {
     flex-direction: column;
     align-items: center;
-    min-height: 130vh;
+    min-height: 120vh;
   }
 
   .signup-form {
@@ -291,13 +291,13 @@ body {
   body, html {
     overflow-x: hidden;
     overflow-y: scroll;
-    min-height: 130vh;
+    min-height: 120vh;
   }
 
   .signup-container {
     flex-direction: column;
     align-items: center;
-    min-height: 130vh;
+    min-height: 120vh;
     padding: 0.1rem;
   }
 
