@@ -144,7 +144,17 @@
   }
 
   .user-thumbnails {
+    display: flex;
+    justify-content: center;
     gap: 30px;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+
+  .thumbnail.active {
+    display: block;
   }
 
   .user-circle {
@@ -188,7 +198,17 @@
   }
 
   .user-thumbnails {
+    display: flex;
+    justify-content: center;
     gap: 20px;
+  }
+
+  .thumbnail {
+    display: none;
+  }
+
+  .thumbnail.active {
+    display: block;
   }
 
   .user-circle {
@@ -232,15 +252,17 @@
   }
 
   .user-thumbnails {
+    display: flex;
+    justify-content: center;
     gap: 10px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
   }
 
   .thumbnail {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 300px;
+    display: none;
+  }
+
+  .thumbnail.active {
+    display: block;
   }
 
   .user-circle {
