@@ -9,7 +9,7 @@ body {
 }
 
 .signup-page {
-  overflow-y: scroll; 
+  overflow-y: auto; 
 }
 
 .signup-container {
