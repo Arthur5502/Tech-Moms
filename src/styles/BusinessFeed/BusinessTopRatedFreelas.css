@@ -51,11 +51,12 @@
   gap: 4rem;
 }
 
-.top-position-professional h4 {
+.top-position-professional {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  font-size: 2rem;
+  width: 400%;
+  font-size: 1.4rem;
 }
 
 .top-online-indicator {
@@ -234,7 +235,6 @@
 
   .top-position-professional {
     font-size: 1.3rem;
-    margin-left: 7rem;
   }
 
   .top-freelancer-list {
