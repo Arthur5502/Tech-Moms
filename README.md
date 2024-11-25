@@ -79,8 +79,8 @@ npm start
      http://localhost:3000
 
 ## Deploy
-Para produção:
-(https://tech-moms.vercel.app/)
+Link do servidor:
+https://tech-moms.vercel.app/
 
 O diretório gerado está hospedado na plataforma Vercel.
 
