@@ -293,13 +293,13 @@ body {
 /* Responsividade para 480px */
 @media (max-width: 480px) {
   body, html {
-    min-height: 120vh;
+    min-height: 130vh;
   }
 
   .signup-container {
     flex-direction: column;
     align-items: center;
-    min-height: 120vh;
+    min-height: 130vh;
     padding: 0.1rem;
   }
 
