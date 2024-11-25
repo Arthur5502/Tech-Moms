@@ -78,17 +78,14 @@ npm start
   4. Abra o navegador e acesse o endereço:  
      http://localhost:3000
 
-## Build e Deploy
-Para produção:
-```bash
-npm run build
-```
-O diretório build gerado pode ser hospedado em plataformas como Vercel, Netlify, ou AWS S3.
+## Deploy
+Link do servidor:
+https://tech-moms.vercel.app/
+
+O diretório gerado está hospedado na plataforma Vercel.
 
 ## Melhorias Futuras
-Integrar suporte para Docker para criar um ambiente de desenvolvimento consistente.
-Expandir o sistema de IA com modelos mais avançados.
-Implementar notificações em tempo real via WebSockets ou Firebase.
+Concluir as funcionalidades das telas presentes no site e integrar o site com o Back-End e banco de dados.
 
 ## Desenvolvedores
 
