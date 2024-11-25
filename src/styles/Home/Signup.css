@@ -254,7 +254,6 @@ body {
 
 @media (max-width: 768px) {
   body, html {
-    overflow: hidden; 
     min-height: 130vh;
   }
 
