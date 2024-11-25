@@ -262,6 +262,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+  body, html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 120vh;
+  }
+  
   .perfil-container {
     flex-direction: column;
     padding: 1.5rem;
@@ -299,6 +305,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 120vh;
+  }
+
   .perfil-content {
     display: flex;
     flex-direction: column;
@@ -363,12 +375,17 @@
 }
 
 @media screen and (max-width: 480px) {
+  body, html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 120vh;
+  }
+
   .perfil-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-left: 2rem;
-    min-height: 110vh;
   }
 
   .perfil-visualizacao {

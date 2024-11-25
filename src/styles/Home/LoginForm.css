@@ -100,7 +100,6 @@ html, body {
   .login-container {
     padding: 2rem;
     flex-direction: column;
-    overflow-y: scroll;
   }
 
   .login-box {
