@@ -5,7 +5,7 @@ body {
 }
 
 .no-scroll {
-  overflow: auto;
+  overflow: hidden;
 }
 
 a, button {

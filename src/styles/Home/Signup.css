@@ -97,11 +97,13 @@ body {
   padding-right: 2rem;
   padding-left: 1.2rem;
 }
+
 .signup-header {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
+
 .signup-form {
   background-color: white;
   padding: 0.8rem;

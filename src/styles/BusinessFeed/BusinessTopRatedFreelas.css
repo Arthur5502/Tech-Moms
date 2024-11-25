@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 2rem;
 }
 
 .top-online-indicator {
@@ -232,6 +232,11 @@
     transform: translate(-1.7rem);
   }
 
+  .top-position-professional {
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }
+
   .top-freelancer-list {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -255,7 +260,7 @@
   }
 
   .top-freelancer-card-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .top-freelancer-badge {
