@@ -5,12 +5,11 @@ body {
   height: 100vh;
   font-family: 'Inter';
   background: linear-gradient(45deg, #f0f0f5, #e6e6fa);
-  overflow-x: hidden;
-  overflow-y: auto; 
+  overflow: auto;
 }
 
 .signup-page {
-  overflow-y: auto; 
+  overflow: hidden; 
 }
 
 .signup-container {
@@ -294,18 +293,13 @@ body {
 /* Responsividade para 480px */
 @media (max-width: 480px) {
   body, html {
-    min-height: 130vh;
-  }
-
-  .signup-page {
-    overflow-x: hidden;
-    overflow-y: scroll;
+    min-height: 120vh;
   }
 
   .signup-container {
     flex-direction: column;
     align-items: center;
-    min-height: 130vh;
+    min-height: 120vh;
     padding: 0.1rem;
   }
 

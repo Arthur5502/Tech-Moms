@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import InputMask from 'react-input-mask';
 import '../../styles/Home/Signup.css';
@@ -19,14 +19,6 @@ const Signup = () => {
     cpf: '',
     birthDate: ''
   });
-
-  useEffect(() => {
-    document.body.classList.add('no-scroll');
-
-    return () => {
-      document.body.classList.remove('no-scroll');
-    };
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
