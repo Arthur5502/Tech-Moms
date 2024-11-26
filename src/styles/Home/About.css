@@ -76,5 +76,6 @@
   
     .about-line p {
       font-size: 18px;
+      height: 100vh;
     }
   }
